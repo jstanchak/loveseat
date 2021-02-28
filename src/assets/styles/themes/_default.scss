@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// Default theme
+// -----------------------------------------------------------------------------
+
+$danger: #ED412C;
+
+// MENU
+.bg-red {
+    background-color: #ED412C;
+    .a{
+        color: white;
+    }
+}
+
+// BUTTONS
+// .btn-primary {
+//     background-color: #ED412C;
+//     border: none;
+// }
+// .btn-outline-primary {
+//     color:#ED412C;
+//     border-color: #ED412C;
+// }
+
+// CONTAINERS
+.container {
+    margin: 0rem auto;
+}
+
+// BADGE
+.badge{
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: 1px solid #989898;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.custom-badge{
+    bottom: -10px;
+    span {
+        background: white;
+        border: 1px solid #E5E5E5;
+        border-radius: 18px;
+        color: #0078D6;
+        text-decoration: underline;
+    }
+   
+}

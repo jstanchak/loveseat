@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Frontend Starter</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="favicon.ico">
+
+<meta name="theme-color" content="#424242">
+
+
+<link href="./css/styles.css?29f05cc94ada3bd85227" rel="stylesheet"></head>
+<body class="bg-light">
+
+<!--[if IE]>
+<div class="p-3 bg-light">
+  <div class="container">
+    <p class="mb-0 browserupgrade">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+    </p>
+  </div>
+</div>
+<![endif]-->
+
+
+
+
+  <header class="bg-red">
+  <div class="container m-auto">
+    <nav class="navbar p-0 py-3">
+      <div class="container-fluid row p-0 m-0">
+
+        <div class="col-3">
+          <span class="navbar-brand navbar-expand">
+            <img src="images/logo.svg" width="120" height="50" class="d-inline-block align-top rounded" alt="Loveseat Logo">
+          </span>
+        </div>
+        
+        <div class="col-6">
+           <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+         
+        <div class="col-3">
+          <ul class="navbar-nav ml-auto flex-row d-flex justify-content-end">
+            <li class="nav-item mx-2">
+              <a href="#">
+                <img src="images/heart.svg">
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="#">
+                <img src="images/bell.svg">
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="#">
+                <img src="images/user.svg">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container-fluid row">
+        <div class="col-3 text-white ">
+          <img src="images/map-pin.svg">
+          <p class="d-inline-block mb-0">
+            San Diego
+          </p>
+          <img src="images/chevron-down.svg">
+        </div>
+        <div class="col-9">
+          <ul class="navbar-nav ml-auto flex-row">
+            <li class="nav-item mx-3">
+              <a href="#" class="text-white">
+                Current Auction
+              </a>
+            </li class="nav-item mx-3">
+            <li>
+              <a href="#" class="text-white">
+                How It Works
+              </a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="#" class="text-white">
+                Newsletter
+              </a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="#" class="text-white">
+                Sell
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</header>
+
+  <div class="bg-white px-5 py-4">
+    <div class="container">
+        <div class="row" >
+                <div class="col-7">
+                    <h4>Mid century modern for every room, designer linens, brand new mattresses, danish style, cabinets, vintage seating & more</h4>
+                    <p>Solid Sideboards, Lucite Legged Chesterfield Sofa, Leather Pushback Recliner... 
+                        <!-- <span>
+                        , Top-Of-Line Vacuums, Velvet Side Chairs, Carson Carrington End Table,Leather Saddle Desk Chair, Vintage Wooden High Chair, Vera Wang Linens, Foam Mattresss Toppers, Hotel Colletction Bedding Sets, Outdoor Lighting, Luggage, Decorating Kits, Ice Cream Maeker ans more!</p>
+            
+                        </span> -->
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-outline-primary">Join to Bid</button>
+                </div>
+                <div class="col-3 text-right">
+                    <h3>Ends In</h3>
+                    <span>1d 8h 17m 47s</span>
+                    <p>Sun 17, Jan 2021 - 7 p.m. PT</p>
+                </div>
+        </div> 
+        <div class="row" >
+            <div class="col-9">
+                <div class="d-inline-block me-auto mr-3">
+                <img src="images/map-marker.svg">
+                8535 Production Ave, San Diego, CA 92121
+                </div>
+                <a href="#" class="link-primary mr-3 text-danger">Auction terms</a>
+                <a href="#" class="link-primary mr-auto text-danger">Bid Increments</a>
+            </div>
+            
+            <div class="col-3 text-right">
+                <a href="#" class="link-primary text-danger">Important dates</a>
+            </div>
+        </div>
+            
+    </div>
+
+    
+</div>
+
+
+  <main class="container mt-4">
+    <!-- FILTERS -->
+    <div class="row">
+      <div class=" col-3">
+        <h5>View</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Live Items
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Ended Items
+          </label>
+        </div>
+
+        <h5>Status</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            All Items
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            All Favourites
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            My Bids
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Winning Bids
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Losing bids
+          </label>
+        </div>
+      
+        <h5>Type</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Beds (7)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Chairs (12)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Decor (2)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Desks (15)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Dressers (3)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Jewelry (27)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Sofas (9)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Storages (8)
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Tables (11)
+            </label>
+          </div>
+
+        <h5>Style</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              American Traditional
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Coastal
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Contemporary
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Industrial
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Mid Century Modern
+            </label>
+          </div>
+          
+      </div>
+      <!-- PRODUCTS -->
+      <div class="col-9 ">
+        <p>Showing 1-78 of 1425 active items</p>
+
+        <div class="mb-4">
+          <div class="row">
+
+            <div class="col-4 mb-3">
+
+    <div class="card">
+      <div class="card-image position-relative">
+        <img src="images/product.png" class="card-img-top">
+        
+        <div class="card-img-overlay">
+
+          <div class="row align-items-center">
+            <span class="badge mr-2">
+              <img src="images/color.svg">
+              Orange
+            </span>
+            <span class="badge">
+              <img src="images/size.svg">
+              King
+            </span>
+            <img src="images/Favorite.svg" class="ml-auto">
+          </div>
+
+          <div class="row position-absolute custom-badge">
+            <span class="badge pb-1 px-2">
+              <small>
+                Overstock
+              </small>
+            </span>
+          </div>
+        </div>
+
+      </div>
+        
+
+        
+
+      <div class="card-body">
+
+        <p class="card-title">
+          Keegan fabric set of 2 orange dining chair
+        </p>
+
+        <a href="#" class="text-secondary">
+          <img src="images/open-box.svg">
+          Open Box
+        </a>
+
+        <div class="row my-2 align-items-center">
+          <div class="col">
+            <h3 class="d-inline-block">
+              $95
+            </h3>
+            <a href="#" class=" card-link text-muted">
+              <small>
+                12 bids
+              </small>
+            </a>
+            </div>
+          
+          <p class="text-muted col-auto mb-0">
+            <small>
+              1d 8h 47m
+            </small>
+          </p>
+        </div>
+
+        <form class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Bid</button>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-2">
+          <img src="images/warning.svg" class="col-auto pr-0 d-inline-block ">
+          <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+            <div class="col-4 mb-3">
+
+    <div class="card">
+      <div class="card-image position-relative">
+        <img src="images/product.png" class="card-img-top">
+        
+        <div class="card-img-overlay">
+
+          <div class="row align-items-center">
+            <span class="badge mr-2">
+              <img src="images/color.svg">
+              Orange
+            </span>
+            <span class="badge">
+              <img src="images/size.svg">
+              King
+            </span>
+            <img src="images/Favorite.svg" class="ml-auto">
+          </div>
+
+          <div class="row position-absolute custom-badge">
+            <span class="badge pb-1 px-2">
+              <small>
+                Overstock
+              </small>
+            </span>
+          </div>
+        </div>
+
+      </div>
+        
+
+        
+
+      <div class="card-body">
+
+        <p class="card-title">
+          Keegan fabric set of 2 orange dining chair
+        </p>
+
+        <a href="#" class="text-secondary">
+          <img src="images/open-box.svg">
+          Open Box
+        </a>
+
+        <div class="row my-2 align-items-center">
+          <div class="col">
+            <h3 class="d-inline-block">
+              $95
+            </h3>
+            <a href="#" class=" card-link text-muted">
+              <small>
+                12 bids
+              </small>
+            </a>
+            </div>
+          
+          <p class="text-muted col-auto mb-0">
+            <small>
+              1d 8h 47m
+            </small>
+          </p>
+        </div>
+
+        <form class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Bid</button>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-2">
+          <img src="images/warning.svg" class="col-auto pr-0 d-inline-block ">
+          <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+            <div class="col-4 mb-3">
+
+    <div class="card">
+      <div class="card-image position-relative">
+        <img src="images/product.png" class="card-img-top">
+        
+        <div class="card-img-overlay">
+
+          <div class="row align-items-center">
+            <span class="badge mr-2">
+              <img src="images/color.svg">
+              Orange
+            </span>
+            <span class="badge">
+              <img src="images/size.svg">
+              King
+            </span>
+            <img src="images/Favorite.svg" class="ml-auto">
+          </div>
+
+          <div class="row position-absolute custom-badge">
+            <span class="badge pb-1 px-2">
+              <small>
+                Overstock
+              </small>
+            </span>
+          </div>
+        </div>
+
+      </div>
+        
+
+        
+
+      <div class="card-body">
+
+        <p class="card-title">
+          Keegan fabric set of 2 orange dining chair
+        </p>
+
+        <a href="#" class="text-secondary">
+          <img src="images/open-box.svg">
+          Open Box
+        </a>
+
+        <div class="row my-2 align-items-center">
+          <div class="col">
+            <h3 class="d-inline-block">
+              $95
+            </h3>
+            <a href="#" class=" card-link text-muted">
+              <small>
+                12 bids
+              </small>
+            </a>
+            </div>
+          
+          <p class="text-muted col-auto mb-0">
+            <small>
+              1d 8h 47m
+            </small>
+          </p>
+        </div>
+
+        <form class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Bid</button>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-2">
+          <img src="images/warning.svg" class="col-auto pr-0 d-inline-block ">
+          <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+            <div class="col-4 mb-3">
+
+    <div class="card">
+      <div class="card-image position-relative">
+        <img src="images/product.png" class="card-img-top">
+        
+        <div class="card-img-overlay">
+
+          <div class="row align-items-center">
+            <span class="badge mr-2">
+              <img src="images/color.svg">
+              Orange
+            </span>
+            <span class="badge">
+              <img src="images/size.svg">
+              King
+            </span>
+            <img src="images/Favorite.svg" class="ml-auto">
+          </div>
+
+          <div class="row position-absolute custom-badge">
+            <span class="badge pb-1 px-2">
+              <small>
+                Overstock
+              </small>
+            </span>
+          </div>
+        </div>
+
+      </div>
+        
+
+        
+
+      <div class="card-body">
+
+        <p class="card-title">
+          Keegan fabric set of 2 orange dining chair
+        </p>
+
+        <a href="#" class="text-secondary">
+          <img src="images/open-box.svg">
+          Open Box
+        </a>
+
+        <div class="row my-2 align-items-center">
+          <div class="col">
+            <h3 class="d-inline-block">
+              $95
+            </h3>
+            <a href="#" class=" card-link text-muted">
+              <small>
+                12 bids
+              </small>
+            </a>
+            </div>
+          
+          <p class="text-muted col-auto mb-0">
+            <small>
+              1d 8h 47m
+            </small>
+          </p>
+        </div>
+
+        <form class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Bid</button>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-2">
+          <img src="images/warning.svg" class="col-auto pr-0 d-inline-block ">
+          <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+            <div class="col-4 mb-3">
+
+    <div class="card">
+      <div class="card-image position-relative">
+        <img src="images/product.png" class="card-img-top">
+        
+        <div class="card-img-overlay">
+
+          <div class="row align-items-center">
+            <span class="badge mr-2">
+              <img src="images/color.svg">
+              Orange
+            </span>
+            <span class="badge">
+              <img src="images/size.svg">
+              King
+            </span>
+            <img src="images/Favorite.svg" class="ml-auto">
+          </div>
+
+          <div class="row position-absolute custom-badge">
+            <span class="badge pb-1 px-2">
+              <small>
+                Overstock
+              </small>
+            </span>
+          </div>
+        </div>
+
+      </div>
+        
+
+        
+
+      <div class="card-body">
+
+        <p class="card-title">
+          Keegan fabric set of 2 orange dining chair
+        </p>
+
+        <a href="#" class="text-secondary">
+          <img src="images/open-box.svg">
+          Open Box
+        </a>
+
+        <div class="row my-2 align-items-center">
+          <div class="col">
+            <h3 class="d-inline-block">
+              $95
+            </h3>
+            <a href="#" class=" card-link text-muted">
+              <small>
+                12 bids
+              </small>
+            </a>
+            </div>
+          
+          <p class="text-muted col-auto mb-0">
+            <small>
+              1d 8h 47m
+            </small>
+          </p>
+        </div>
+
+        <form class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Bid</button>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-2">
+          <img src="images/warning.svg" class="col-auto pr-0 d-inline-block ">
+          <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+            <div class="col-4 mb-3">
+
+    <div class="card">
+      <div class="card-image position-relative">
+        <img src="images/product.png" class="card-img-top">
+        
+        <div class="card-img-overlay">
+
+          <div class="row align-items-center">
+            <span class="badge mr-2">
+              <img src="images/color.svg">
+              Orange
+            </span>
+            <span class="badge">
+              <img src="images/size.svg">
+              King
+            </span>
+            <img src="images/Favorite.svg" class="ml-auto">
+          </div>
+
+          <div class="row position-absolute custom-badge">
+            <span class="badge pb-1 px-2">
+              <small>
+                Overstock
+              </small>
+            </span>
+          </div>
+        </div>
+
+      </div>
+        
+
+        
+
+      <div class="card-body">
+
+        <p class="card-title">
+          Keegan fabric set of 2 orange dining chair
+        </p>
+
+        <a href="#" class="text-secondary">
+          <img src="images/open-box.svg">
+          Open Box
+        </a>
+
+        <div class="row my-2 align-items-center">
+          <div class="col">
+            <h3 class="d-inline-block">
+              $95
+            </h3>
+            <a href="#" class=" card-link text-muted">
+              <small>
+                12 bids
+              </small>
+            </a>
+            </div>
+          
+          <p class="text-muted col-auto mb-0">
+            <small>
+              1d 8h 47m
+            </small>
+          </p>
+        </div>
+
+        <form class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Bid</button>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-2">
+          <img src="images/warning.svg" class="col-auto pr-0 d-inline-block ">
+          <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+            <div class="col-4 mb-3">
+
+    <div class="card">
+      <div class="card-image position-relative">
+        <img src="images/product.png" class="card-img-top">
+        
+        <div class="card-img-overlay">
+
+          <div class="row align-items-center">
+            <span class="badge mr-2">
+              <img src="images/color.svg">
+              Orange
+            </span>
+            <span class="badge">
+              <img src="images/size.svg">
+              King
+            </span>
+            <img src="images/Favorite.svg" class="ml-auto">
+          </div>
+
+          <div class="row position-absolute custom-badge">
+            <span class="badge pb-1 px-2">
+              <small>
+                Overstock
+              </small>
+            </span>
+          </div>
+        </div>
+
+      </div>
+        
+
+        
+
+      <div class="card-body">
+
+        <p class="card-title">
+          Keegan fabric set of 2 orange dining chair
+        </p>
+
+        <a href="#" class="text-secondary">
+          <img src="images/open-box.svg">
+          Open Box
+        </a>
+
+        <div class="row my-2 align-items-center">
+          <div class="col">
+            <h3 class="d-inline-block">
+              $95
+            </h3>
+            <a href="#" class=" card-link text-muted">
+              <small>
+                12 bids
+              </small>
+            </a>
+            </div>
+          
+          <p class="text-muted col-auto mb-0">
+            <small>
+              1d 8h 47m
+            </small>
+          </p>
+        </div>
+
+        <form class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Bid</button>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-2">
+          <img src="images/warning.svg" class="col-auto pr-0 d-inline-block ">
+          <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+            <div class="col-4 mb-3">
+
+    <div class="card">
+      <div class="card-image position-relative">
+        <img src="images/product.png" class="card-img-top">
+        
+        <div class="card-img-overlay">
+
+          <div class="row align-items-center">
+            <span class="badge mr-2">
+              <img src="images/color.svg">
+              Orange
+            </span>
+            <span class="badge">
+              <img src="images/size.svg">
+              King
+            </span>
+            <img src="images/Favorite.svg" class="ml-auto">
+          </div>
+
+          <div class="row position-absolute custom-badge">
+            <span class="badge pb-1 px-2">
+              <small>
+                Overstock
+              </small>
+            </span>
+          </div>
+        </div>
+
+      </div>
+        
+
+        
+
+      <div class="card-body">
+
+        <p class="card-title">
+          Keegan fabric set of 2 orange dining chair
+        </p>
+
+        <a href="#" class="text-secondary">
+          <img src="images/open-box.svg">
+          Open Box
+        </a>
+
+        <div class="row my-2 align-items-center">
+          <div class="col">
+            <h3 class="d-inline-block">
+              $95
+            </h3>
+            <a href="#" class=" card-link text-muted">
+              <small>
+                12 bids
+              </small>
+            </a>
+            </div>
+          
+          <p class="text-muted col-auto mb-0">
+            <small>
+              1d 8h 47m
+            </small>
+          </p>
+        </div>
+
+        <form class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Bid</button>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-2">
+          <img src="images/warning.svg" class="col-auto pr-0 d-inline-block ">
+          <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+            <div class="col-4 mb-3">
+
+    <div class="card">
+      <div class="card-image position-relative">
+        <img src="images/product.png" class="card-img-top">
+        
+        <div class="card-img-overlay">
+
+          <div class="row align-items-center">
+            <span class="badge mr-2">
+              <img src="images/color.svg">
+              Orange
+            </span>
+            <span class="badge">
+              <img src="images/size.svg">
+              King
+            </span>
+            <img src="images/Favorite.svg" class="ml-auto">
+          </div>
+
+          <div class="row position-absolute custom-badge">
+            <span class="badge pb-1 px-2">
+              <small>
+                Overstock
+              </small>
+            </span>
+          </div>
+        </div>
+
+      </div>
+        
+
+        
+
+      <div class="card-body">
+
+        <p class="card-title">
+          Keegan fabric set of 2 orange dining chair
+        </p>
+
+        <a href="#" class="text-secondary">
+          <img src="images/open-box.svg">
+          Open Box
+        </a>
+
+        <div class="row my-2 align-items-center">
+          <div class="col">
+            <h3 class="d-inline-block">
+              $95
+            </h3>
+            <a href="#" class=" card-link text-muted">
+              <small>
+                12 bids
+              </small>
+            </a>
+            </div>
+          
+          <p class="text-muted col-auto mb-0">
+            <small>
+              1d 8h 47m
+            </small>
+          </p>
+        </div>
+
+        <form class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Bid</button>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-2">
+          <img src="images/warning.svg" class="col-auto pr-0 d-inline-block ">
+          <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+            <div class="col-4 mb-3">
+
+    <div class="card">
+      <div class="card-image position-relative">
+        <img src="images/product.png" class="card-img-top">
+        
+        <div class="card-img-overlay">
+
+          <div class="row align-items-center">
+            <span class="badge mr-2">
+              <img src="images/color.svg">
+              Orange
+            </span>
+            <span class="badge">
+              <img src="images/size.svg">
+              King
+            </span>
+            <img src="images/Favorite.svg" class="ml-auto">
+          </div>
+
+          <div class="row position-absolute custom-badge">
+            <span class="badge pb-1 px-2">
+              <small>
+                Overstock
+              </small>
+            </span>
+          </div>
+        </div>
+
+      </div>
+        
+
+        
+
+      <div class="card-body">
+
+        <p class="card-title">
+          Keegan fabric set of 2 orange dining chair
+        </p>
+
+        <a href="#" class="text-secondary">
+          <img src="images/open-box.svg">
+          Open Box
+        </a>
+
+        <div class="row my-2 align-items-center">
+          <div class="col">
+            <h3 class="d-inline-block">
+              $95
+            </h3>
+            <a href="#" class=" card-link text-muted">
+              <small>
+                12 bids
+              </small>
+            </a>
+            </div>
+          
+          <p class="text-muted col-auto mb-0">
+            <small>
+              1d 8h 47m
+            </small>
+          </p>
+        </div>
+
+        <form class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Bid</button>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-2">
+          <img src="images/warning.svg" class="col-auto pr-0 d-inline-block ">
+          <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+            <div class="col-4 mb-3">
+
+    <div class="card">
+      <div class="card-image position-relative">
+        <img src="images/product.png" class="card-img-top">
+        
+        <div class="card-img-overlay">
+
+          <div class="row align-items-center">
+            <span class="badge mr-2">
+              <img src="images/color.svg">
+              Orange
+            </span>
+            <span class="badge">
+              <img src="images/size.svg">
+              King
+            </span>
+            <img src="images/Favorite.svg" class="ml-auto">
+          </div>
+
+          <div class="row position-absolute custom-badge">
+            <span class="badge pb-1 px-2">
+              <small>
+                Overstock
+              </small>
+            </span>
+          </div>
+        </div>
+
+      </div>
+        
+
+        
+
+      <div class="card-body">
+
+        <p class="card-title">
+          Keegan fabric set of 2 orange dining chair
+        </p>
+
+        <a href="#" class="text-secondary">
+          <img src="images/open-box.svg">
+          Open Box
+        </a>
+
+        <div class="row my-2 align-items-center">
+          <div class="col">
+            <h3 class="d-inline-block">
+              $95
+            </h3>
+            <a href="#" class=" card-link text-muted">
+              <small>
+                12 bids
+              </small>
+            </a>
+            </div>
+          
+          <p class="text-muted col-auto mb-0">
+            <small>
+              1d 8h 47m
+            </small>
+          </p>
+        </div>
+
+        <form class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Bid</button>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-2">
+          <img src="images/warning.svg" class="col-auto pr-0 d-inline-block ">
+          <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+            <div class="col-4 mb-3">
+
+    <div class="card">
+      <div class="card-image position-relative">
+        <img src="images/product.png" class="card-img-top">
+        
+        <div class="card-img-overlay">
+
+          <div class="row align-items-center">
+            <span class="badge mr-2">
+              <img src="images/color.svg">
+              Orange
+            </span>
+            <span class="badge">
+              <img src="images/size.svg">
+              King
+            </span>
+            <img src="images/Favorite.svg" class="ml-auto">
+          </div>
+
+          <div class="row position-absolute custom-badge">
+            <span class="badge pb-1 px-2">
+              <small>
+                Overstock
+              </small>
+            </span>
+          </div>
+        </div>
+
+      </div>
+        
+
+        
+
+      <div class="card-body">
+
+        <p class="card-title">
+          Keegan fabric set of 2 orange dining chair
+        </p>
+
+        <a href="#" class="text-secondary">
+          <img src="images/open-box.svg">
+          Open Box
+        </a>
+
+        <div class="row my-2 align-items-center">
+          <div class="col">
+            <h3 class="d-inline-block">
+              $95
+            </h3>
+            <a href="#" class=" card-link text-muted">
+              <small>
+                12 bids
+              </small>
+            </a>
+            </div>
+          
+          <p class="text-muted col-auto mb-0">
+            <small>
+              1d 8h 47m
+            </small>
+          </p>
+        </div>
+
+        <form class="row">
+          <div class="col">
+            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Bid</button>
+          </div>
+        </form>
+
+        <div class="row align-items-center mt-2">
+          <img src="images/warning.svg" class="col-auto pr-0 d-inline-block ">
+          <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+            
+          </div>
+          
+          
+          
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+        
+      </div>
+    </div>
+    
+    
+  </main>
+
+  <footer class="footer">
+  <div class="container py-3">
+    <small>2021 &copy; Loveseat</small>
+  </div>
+</footer>
+
+
+
+<script src="./js/index.bundle.js?29f05cc94ada3bd85227"></script></body>
+</html>
