@@ -37,9 +37,15 @@ $danger: #ED412C;
         color: #0078D6;
         text-decoration: underline;
     }
-   
+
+}
+
+.custom-divider::after {
+    content: "";
+    border-top: 1px solid white;
+    position: absolute;
 }
 
 @media screen and (max-width: 575px) {
-    
+
 }
