@@ -4,59 +4,97 @@
   <meta charset="utf-8">
   <title>Frontend Starter</title>
   <meta name="description" content="">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   ${ require('./partials/head.html') }
 
 </head>
 <body class="bg-light">
 
-${ require('./partials/browserupgrade.html') }
-
-
+  ${ require('./partials/browserupgrade.html') }
 
   ${ require('./partials/header2.html') }
 
-  ${ require('./partials/featured-auction.html') }
 
-  <main class="container mt-4">
-    <div class="row">
-      
-      ${ require('./partials/filters.html') }
-      <!-- PRODUCTS -->
-      <div class="col-lg-9 col-md-12">
-        <p>Showing 1-78 of 1425 active items</p>
+  <main >
 
-        <div class="mb-4">
-          <div class="row">
-            ${ require('./partials/product-card.html') }
-            ${ require('./partials/product-card.html') }
-            ${ require('./partials/product-card.html') }
-            ${ require('./partials/product-card.html') }
-            ${ require('./partials/product-card.html') }
-            ${ require('./partials/product-card.html') }
-            ${ require('./partials/product-card.html') }
-            ${ require('./partials/product-card.html') }
-            ${ require('./partials/product-card.html') }
-            ${ require('./partials/product-card.html') }
-            ${ require('./partials/product-card.html') }
-            ${ require('./partials/product-card.html') }
+      ${ require('./partials/featured-auction.html') }
+
+    <div class="hide-desktop text-center border-top border-bottom">
+
+      <button type="button" class="btn text-primary btn-transparent py-2" data-toggle="modal" data-target="#filters-modal">
+        <img src="../assets/images/icons/filters.svg" class="mr-1">
+        Filters
+      </button>
+
+      <div class="modal fade" id="filters-modal" tabindex="-1" role="dialog" aria-labelledby="filters-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Filter by</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body container text-left mt-2">
+              ${ require('./partials/filters.html') }
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline btn-outline-secondary">Reset All</button>
+              <button type="button" class="btn btn-primary">Apply</button>
+            </div>
           </div>
         </div>
-
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-
-        ${ require('./partials/notifications-alert.html') }
       </div>
     </div>
+
+
+    <div class="container">
+      <div class="row mt-4">
+
+        <div class="col-lg-3 hide-tablet-mobile">
+          ${ require('./partials/filters.html') }
+        </div>
+
+        <!-- PRODUCTS -->
+        <div class="col-lg-9 col-md-12">
+
+          <p>Showing 1-78 of 1425 active items</p>
+
+          <div class="mb-4">
+            <div class="row">
+              ${ require('./partials/product-card.html') }
+              ${ require('./partials/product-card.html') }
+              ${ require('./partials/product-card.html') }
+              ${ require('./partials/product-card.html') }
+              ${ require('./partials/product-card.html') }
+              ${ require('./partials/product-card.html') }
+              ${ require('./partials/product-card.html') }
+              ${ require('./partials/product-card.html') }
+              ${ require('./partials/product-card.html') }
+              ${ require('./partials/product-card.html') }
+              ${ require('./partials/product-card.html') }
+              ${ require('./partials/product-card.html') }
+            </div>
+          </div>
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+
+          ${ require('./partials/notifications-alert.html') }
+        </div>
+      </div>
+    </div>
+    
+    
     
     
   </main>

@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <title>Frontend Starter</title>
   <meta name="description" content="">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- favicon.ico in the root directory -->
@@ -13,10 +14,10 @@
 <meta name="theme-color" content="#424242">
 
 
-<link href="./css/styles.css?70110630bffe5057afe8" rel="stylesheet"></head>
+<link href="./css/styles.css?57615a39804a2b53f348" rel="stylesheet"></head>
 <body class="bg-light">
 
-<!--[if IE]>
+  <!--[if IE]>
 <div class="p-3 bg-light">
   <div class="container">
     <p class="mb-0 browserupgrade">
@@ -26,8 +27,6 @@
   </div>
 </div>
 <![endif]-->
-
-
 
 
   <header class="bg-red">
@@ -69,9 +68,11 @@
                          </div>
 
                         <div class="d-sm-none d-md-block col-md-8">
-                           <form class="d-flex">
+                           <form class="d-flex search-bar">
                               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                              <button class="btn btn-outline-light" type="submit">Search</button>
+                              <button class="btn" type="submit">
+                                 <img src="images/search.svg">
+                              </button>
                            </form>
                         </div>
                     </div>
@@ -79,7 +80,7 @@
 
                 <div class="d-md-none col-sm-12">
                     <form class="d-flex">
-                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                       <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
                        <button class="btn btn-outline-light" type="submit">Search</button>
                     </form>
                  </div>
@@ -128,28 +129,36 @@
  </header>
 
 
-  <div class="bg-white px-5 py-4">
+
+  <main >
+
+      <div class="bg-white px-lg-5 py-4">
     <div class="container">
         <div class="row" >
                 <div class="col-lg-7 col-md-12 order-lg-1 order-sm-1">
                     <h4>Mid century modern for every room, designer linens, brand new mattresses, danish style, cabinets, vintage seating & more</h4>
                     <p>Solid Sideboards, Lucite Legged Chesterfield Sofa, Leather Pushback Recliner... 
                         <!-- <span>
-                        , Top-Of-Line Vacuums, Velvet Side Chairs, Carson Carrington End Table,Leather Saddle Desk Chair, Vintage Wooden High Chair, Vera Wang Linens, Foam Mattresss Toppers, Hotel Colletction Bedding Sets, Outdoor Lighting, Luggage, Decorating Kits, Ice Cream Maeker ans more!</p>
+                        , Top-Of-Line Vacuums, Velvet Side Chairs, Carson Carrington End Table,Leather Saddle Desk Chair, Vintage Wooden High Chair, Vera Wang Linens, Foam Mattresss Toppers, Hotel Colletction Bedding Sets, Outdoor Lighting, Luggage, Decorating Kits, Ice Cream Maeker ans more!
+                        </p>
             
                         </span> -->
                 </div>
-                <div class="col-lg-2 col-md-6 order-lg-2 order-sm-3">
-                    <button type="button" class="btn btn-outline-primary">Join to Bid</button>
+                <div class="col-lg-2 col-md-6 col-sm-6 order-lg-2 order-sm-3 text-right align-self-lg-start align-self-md-center">
+                    <button type="button" class="btn btn-outline btn-outline-primary">Join to Bid</button>
                 </div>
-                <div class="col-lg-3 col-md-6 text-right order-lg-3 order-sm-2">
-                    <h3>Ends In</h3>
-                    <span>1d 8h 17m 47s</span>
-                    <p>Sun 17, Jan 2021 - 7 p.m. PT</p>
+                <div class="col-lg-3 col-md-6 col-sm-6 order-lg-3 order-sm-2 text-sm-left text-lg-right">
+                    <p class="display-title my-0">
+                        Ends In
+                        <span class="text-primary font-weight-bold d-block">
+                            1d 8h 17m 47s
+                        </span>
+                    </p>
+                    <p class="hide-tablet-mobile text-muted">Sun 17, Jan 2021 - 7 p.m. PT</p>
                 </div>
         </div> 
-        <div class="row" >
-            <div class="col-9">
+        <div class="row hide-tablet-mobile" >
+            <div class="col-9 ">
                 <div class="d-inline-block me-auto mr-3">
                 <img src="images/map-marker.svg">
                 8535 Production Ave, San Diego, CA 92121
@@ -169,57 +178,77 @@
 </div>
 
 
-  <main class="container mt-4">
-    <div class="row">
-      
-      <!-- FILTERS -->
-    <div class=" col-lg-3 col-md-12" id="filters">
-      <h5>View</h5>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">
-          Live Items
-        </label>
-      </div>
-      <div class="form-check mb-3">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          Ended Items
-        </label>
+    <div class="hide-desktop text-center border-top border-bottom">
+
+      <button type="button" class="btn text-primary btn-transparent py-2" data-toggle="modal" data-target="#filters-modal">
+        <img src="images/filters.svg" class="mr-1">
+        Filters
+      </button>
+
+      <div class="modal fade" id="filters-modal" tabindex="-1" role="dialog" aria-labelledby="filters-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Filter by</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body container text-left mt-2">
+              <!-- FILTERS -->
+    <div class="filters" id="filters">
+
+      <div class="filters-group">
+        <h5>View</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Live Items
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Ended Items
+          </label>
+        </div>
       </div>
 
-      <h5>Status</h5>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          All Items
-        </label>
+      <div class="filters-group">
+        <h5>Status</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            All Items
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            All Favourites
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            My Bids
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Winning Bids
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Losing bids
+          </label>
+        </div>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          All Favourites
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          My Bids
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Winning Bids
-        </label>
-      </div>
-      <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Losing bids
-        </label>
-      </div>
-    
+
+      <div class="filters-group">
         <h5>Type</h5>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -275,7 +304,9 @@
             Tables (11)
           </label>
         </div>
+      </div>
 
+      <div class="filters-group">
         <h5>Style</h5>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -307,21 +338,188 @@
             Mid Century Modern
           </label>
         </div>
-        
+      </div>
+ 
     </div>
-      <!-- PRODUCTS -->
-      <div class="col-lg-9 col-md-12">
-        <p>Showing 1-78 of 1425 active items</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline btn-outline-secondary">Reset All</button>
+              <button type="button" class="btn btn-primary">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div class="mb-4">
-          <div class="row">
-            <div class="col-lg-4 mb-3 col-sm-12 col-md-6">
+
+    <div class="container">
+      <div class="row mt-4">
+
+        <div class="col-lg-3 hide-tablet-mobile">
+          <!-- FILTERS -->
+    <div class="filters" id="filters">
+
+      <div class="filters-group">
+        <h5>View</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Live Items
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Ended Items
+          </label>
+        </div>
+      </div>
+
+      <div class="filters-group">
+        <h5>Status</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            All Items
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            All Favourites
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            My Bids
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Winning Bids
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Losing bids
+          </label>
+        </div>
+      </div>
+
+      <div class="filters-group">
+        <h5>Type</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Beds (7)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Chairs (12)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Decor (2)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Desks (15)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Dressers (3)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Jewelry (27)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Sofas (9)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Storages (8)
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Tables (11)
+          </label>
+        </div>
+      </div>
+
+      <div class="filters-group">
+        <h5>Style</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            American Traditional
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Coastal
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Contemporary
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Industrial
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Mid Century Modern
+          </label>
+        </div>
+      </div>
+ 
+    </div>
+        </div>
+
+        <!-- PRODUCTS -->
+        <div class="col-lg-9 col-md-12">
+
+          <p>Showing 1-78 of 1425 active items</p>
+
+          <div class="mb-4">
+            <div class="row">
+              <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
+      <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
         
-        <div class="card-img-overlay">
+         <!-- OVERLAYS -->
+        <div class="card-img-overlay mx-3">
 
           <div class="row align-items-center">
             <span class="badge mr-2">
@@ -345,19 +543,19 @@
         </div>
 
       </div>
-        
 
-        
-
+      <!-- BODY -->
       <div class="card-body">
 
-        <p class="card-title">
+        <p class="card-title mb-1">
           Keegan fabric set of 2 orange dining chair
         </p>
 
-        <a href="#" class="text-secondary">
+        <a href="#" class="text-secondary ">
           <img src="images/open-box.svg">
+          <p class="underline d-inline-block mb-1">
           Open Box
+          </p>
         </a>
 
         <div class="row my-2 align-items-center">
@@ -365,7 +563,7 @@
             <h3 class="d-inline-block">
               $95
             </h3>
-            <a href="#" class=" card-link text-muted">
+            <a href="#" class=" card-link text-muted underline">
               <small>
                 12 bids
               </small>
@@ -380,7 +578,7 @@
         </div>
 
         <form class="row">
-          <div class="col">
+          <div class="col pr-0">
             <input type="number" class="form-control" id="BidInput" placeholder="$97">
           </div>
           <div class="col-auto">
@@ -398,13 +596,15 @@
     </div>
 
 </div>
-            <div class="col-lg-4 mb-3 col-sm-12 col-md-6">
+              <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
+      <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
         
-        <div class="card-img-overlay">
+         <!-- OVERLAYS -->
+        <div class="card-img-overlay mx-3">
 
           <div class="row align-items-center">
             <span class="badge mr-2">
@@ -428,19 +628,19 @@
         </div>
 
       </div>
-        
 
-        
-
+      <!-- BODY -->
       <div class="card-body">
 
-        <p class="card-title">
+        <p class="card-title mb-1">
           Keegan fabric set of 2 orange dining chair
         </p>
 
-        <a href="#" class="text-secondary">
+        <a href="#" class="text-secondary ">
           <img src="images/open-box.svg">
+          <p class="underline d-inline-block mb-1">
           Open Box
+          </p>
         </a>
 
         <div class="row my-2 align-items-center">
@@ -448,7 +648,7 @@
             <h3 class="d-inline-block">
               $95
             </h3>
-            <a href="#" class=" card-link text-muted">
+            <a href="#" class=" card-link text-muted underline">
               <small>
                 12 bids
               </small>
@@ -463,7 +663,7 @@
         </div>
 
         <form class="row">
-          <div class="col">
+          <div class="col pr-0">
             <input type="number" class="form-control" id="BidInput" placeholder="$97">
           </div>
           <div class="col-auto">
@@ -481,13 +681,15 @@
     </div>
 
 </div>
-            <div class="col-lg-4 mb-3 col-sm-12 col-md-6">
+              <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
+      <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
         
-        <div class="card-img-overlay">
+         <!-- OVERLAYS -->
+        <div class="card-img-overlay mx-3">
 
           <div class="row align-items-center">
             <span class="badge mr-2">
@@ -511,19 +713,19 @@
         </div>
 
       </div>
-        
 
-        
-
+      <!-- BODY -->
       <div class="card-body">
 
-        <p class="card-title">
+        <p class="card-title mb-1">
           Keegan fabric set of 2 orange dining chair
         </p>
 
-        <a href="#" class="text-secondary">
+        <a href="#" class="text-secondary ">
           <img src="images/open-box.svg">
+          <p class="underline d-inline-block mb-1">
           Open Box
+          </p>
         </a>
 
         <div class="row my-2 align-items-center">
@@ -531,7 +733,7 @@
             <h3 class="d-inline-block">
               $95
             </h3>
-            <a href="#" class=" card-link text-muted">
+            <a href="#" class=" card-link text-muted underline">
               <small>
                 12 bids
               </small>
@@ -546,7 +748,7 @@
         </div>
 
         <form class="row">
-          <div class="col">
+          <div class="col pr-0">
             <input type="number" class="form-control" id="BidInput" placeholder="$97">
           </div>
           <div class="col-auto">
@@ -564,13 +766,15 @@
     </div>
 
 </div>
-            <div class="col-lg-4 mb-3 col-sm-12 col-md-6">
+              <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
+      <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
         
-        <div class="card-img-overlay">
+         <!-- OVERLAYS -->
+        <div class="card-img-overlay mx-3">
 
           <div class="row align-items-center">
             <span class="badge mr-2">
@@ -594,19 +798,19 @@
         </div>
 
       </div>
-        
 
-        
-
+      <!-- BODY -->
       <div class="card-body">
 
-        <p class="card-title">
+        <p class="card-title mb-1">
           Keegan fabric set of 2 orange dining chair
         </p>
 
-        <a href="#" class="text-secondary">
+        <a href="#" class="text-secondary ">
           <img src="images/open-box.svg">
+          <p class="underline d-inline-block mb-1">
           Open Box
+          </p>
         </a>
 
         <div class="row my-2 align-items-center">
@@ -614,7 +818,7 @@
             <h3 class="d-inline-block">
               $95
             </h3>
-            <a href="#" class=" card-link text-muted">
+            <a href="#" class=" card-link text-muted underline">
               <small>
                 12 bids
               </small>
@@ -629,7 +833,7 @@
         </div>
 
         <form class="row">
-          <div class="col">
+          <div class="col pr-0">
             <input type="number" class="form-control" id="BidInput" placeholder="$97">
           </div>
           <div class="col-auto">
@@ -647,13 +851,15 @@
     </div>
 
 </div>
-            <div class="col-lg-4 mb-3 col-sm-12 col-md-6">
+              <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
+      <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
         
-        <div class="card-img-overlay">
+         <!-- OVERLAYS -->
+        <div class="card-img-overlay mx-3">
 
           <div class="row align-items-center">
             <span class="badge mr-2">
@@ -677,19 +883,19 @@
         </div>
 
       </div>
-        
 
-        
-
+      <!-- BODY -->
       <div class="card-body">
 
-        <p class="card-title">
+        <p class="card-title mb-1">
           Keegan fabric set of 2 orange dining chair
         </p>
 
-        <a href="#" class="text-secondary">
+        <a href="#" class="text-secondary ">
           <img src="images/open-box.svg">
+          <p class="underline d-inline-block mb-1">
           Open Box
+          </p>
         </a>
 
         <div class="row my-2 align-items-center">
@@ -697,7 +903,7 @@
             <h3 class="d-inline-block">
               $95
             </h3>
-            <a href="#" class=" card-link text-muted">
+            <a href="#" class=" card-link text-muted underline">
               <small>
                 12 bids
               </small>
@@ -712,7 +918,7 @@
         </div>
 
         <form class="row">
-          <div class="col">
+          <div class="col pr-0">
             <input type="number" class="form-control" id="BidInput" placeholder="$97">
           </div>
           <div class="col-auto">
@@ -730,13 +936,15 @@
     </div>
 
 </div>
-            <div class="col-lg-4 mb-3 col-sm-12 col-md-6">
+              <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
+      <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
         
-        <div class="card-img-overlay">
+         <!-- OVERLAYS -->
+        <div class="card-img-overlay mx-3">
 
           <div class="row align-items-center">
             <span class="badge mr-2">
@@ -760,19 +968,19 @@
         </div>
 
       </div>
-        
 
-        
-
+      <!-- BODY -->
       <div class="card-body">
 
-        <p class="card-title">
+        <p class="card-title mb-1">
           Keegan fabric set of 2 orange dining chair
         </p>
 
-        <a href="#" class="text-secondary">
+        <a href="#" class="text-secondary ">
           <img src="images/open-box.svg">
+          <p class="underline d-inline-block mb-1">
           Open Box
+          </p>
         </a>
 
         <div class="row my-2 align-items-center">
@@ -780,7 +988,7 @@
             <h3 class="d-inline-block">
               $95
             </h3>
-            <a href="#" class=" card-link text-muted">
+            <a href="#" class=" card-link text-muted underline">
               <small>
                 12 bids
               </small>
@@ -795,7 +1003,7 @@
         </div>
 
         <form class="row">
-          <div class="col">
+          <div class="col pr-0">
             <input type="number" class="form-control" id="BidInput" placeholder="$97">
           </div>
           <div class="col-auto">
@@ -813,13 +1021,15 @@
     </div>
 
 </div>
-            <div class="col-lg-4 mb-3 col-sm-12 col-md-6">
+              <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
+      <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
         
-        <div class="card-img-overlay">
+         <!-- OVERLAYS -->
+        <div class="card-img-overlay mx-3">
 
           <div class="row align-items-center">
             <span class="badge mr-2">
@@ -843,19 +1053,19 @@
         </div>
 
       </div>
-        
 
-        
-
+      <!-- BODY -->
       <div class="card-body">
 
-        <p class="card-title">
+        <p class="card-title mb-1">
           Keegan fabric set of 2 orange dining chair
         </p>
 
-        <a href="#" class="text-secondary">
+        <a href="#" class="text-secondary ">
           <img src="images/open-box.svg">
+          <p class="underline d-inline-block mb-1">
           Open Box
+          </p>
         </a>
 
         <div class="row my-2 align-items-center">
@@ -863,7 +1073,7 @@
             <h3 class="d-inline-block">
               $95
             </h3>
-            <a href="#" class=" card-link text-muted">
+            <a href="#" class=" card-link text-muted underline">
               <small>
                 12 bids
               </small>
@@ -878,7 +1088,7 @@
         </div>
 
         <form class="row">
-          <div class="col">
+          <div class="col pr-0">
             <input type="number" class="form-control" id="BidInput" placeholder="$97">
           </div>
           <div class="col-auto">
@@ -896,13 +1106,15 @@
     </div>
 
 </div>
-            <div class="col-lg-4 mb-3 col-sm-12 col-md-6">
+              <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
+      <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
         
-        <div class="card-img-overlay">
+         <!-- OVERLAYS -->
+        <div class="card-img-overlay mx-3">
 
           <div class="row align-items-center">
             <span class="badge mr-2">
@@ -926,19 +1138,19 @@
         </div>
 
       </div>
-        
 
-        
-
+      <!-- BODY -->
       <div class="card-body">
 
-        <p class="card-title">
+        <p class="card-title mb-1">
           Keegan fabric set of 2 orange dining chair
         </p>
 
-        <a href="#" class="text-secondary">
+        <a href="#" class="text-secondary ">
           <img src="images/open-box.svg">
+          <p class="underline d-inline-block mb-1">
           Open Box
+          </p>
         </a>
 
         <div class="row my-2 align-items-center">
@@ -946,7 +1158,7 @@
             <h3 class="d-inline-block">
               $95
             </h3>
-            <a href="#" class=" card-link text-muted">
+            <a href="#" class=" card-link text-muted underline">
               <small>
                 12 bids
               </small>
@@ -961,7 +1173,7 @@
         </div>
 
         <form class="row">
-          <div class="col">
+          <div class="col pr-0">
             <input type="number" class="form-control" id="BidInput" placeholder="$97">
           </div>
           <div class="col-auto">
@@ -979,13 +1191,15 @@
     </div>
 
 </div>
-            <div class="col-lg-4 mb-3 col-sm-12 col-md-6">
+              <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
+      <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
         
-        <div class="card-img-overlay">
+         <!-- OVERLAYS -->
+        <div class="card-img-overlay mx-3">
 
           <div class="row align-items-center">
             <span class="badge mr-2">
@@ -1009,19 +1223,19 @@
         </div>
 
       </div>
-        
 
-        
-
+      <!-- BODY -->
       <div class="card-body">
 
-        <p class="card-title">
+        <p class="card-title mb-1">
           Keegan fabric set of 2 orange dining chair
         </p>
 
-        <a href="#" class="text-secondary">
+        <a href="#" class="text-secondary ">
           <img src="images/open-box.svg">
+          <p class="underline d-inline-block mb-1">
           Open Box
+          </p>
         </a>
 
         <div class="row my-2 align-items-center">
@@ -1029,7 +1243,7 @@
             <h3 class="d-inline-block">
               $95
             </h3>
-            <a href="#" class=" card-link text-muted">
+            <a href="#" class=" card-link text-muted underline">
               <small>
                 12 bids
               </small>
@@ -1044,7 +1258,7 @@
         </div>
 
         <form class="row">
-          <div class="col">
+          <div class="col pr-0">
             <input type="number" class="form-control" id="BidInput" placeholder="$97">
           </div>
           <div class="col-auto">
@@ -1062,13 +1276,15 @@
     </div>
 
 </div>
-            <div class="col-lg-4 mb-3 col-sm-12 col-md-6">
+              <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
+      <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
         
-        <div class="card-img-overlay">
+         <!-- OVERLAYS -->
+        <div class="card-img-overlay mx-3">
 
           <div class="row align-items-center">
             <span class="badge mr-2">
@@ -1092,19 +1308,19 @@
         </div>
 
       </div>
-        
 
-        
-
+      <!-- BODY -->
       <div class="card-body">
 
-        <p class="card-title">
+        <p class="card-title mb-1">
           Keegan fabric set of 2 orange dining chair
         </p>
 
-        <a href="#" class="text-secondary">
+        <a href="#" class="text-secondary ">
           <img src="images/open-box.svg">
+          <p class="underline d-inline-block mb-1">
           Open Box
+          </p>
         </a>
 
         <div class="row my-2 align-items-center">
@@ -1112,7 +1328,7 @@
             <h3 class="d-inline-block">
               $95
             </h3>
-            <a href="#" class=" card-link text-muted">
+            <a href="#" class=" card-link text-muted underline">
               <small>
                 12 bids
               </small>
@@ -1127,7 +1343,7 @@
         </div>
 
         <form class="row">
-          <div class="col">
+          <div class="col pr-0">
             <input type="number" class="form-control" id="BidInput" placeholder="$97">
           </div>
           <div class="col-auto">
@@ -1145,13 +1361,15 @@
     </div>
 
 </div>
-            <div class="col-lg-4 mb-3 col-sm-12 col-md-6">
+              <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
+      <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
         
-        <div class="card-img-overlay">
+         <!-- OVERLAYS -->
+        <div class="card-img-overlay mx-3">
 
           <div class="row align-items-center">
             <span class="badge mr-2">
@@ -1175,19 +1393,19 @@
         </div>
 
       </div>
-        
 
-        
-
+      <!-- BODY -->
       <div class="card-body">
 
-        <p class="card-title">
+        <p class="card-title mb-1">
           Keegan fabric set of 2 orange dining chair
         </p>
 
-        <a href="#" class="text-secondary">
+        <a href="#" class="text-secondary ">
           <img src="images/open-box.svg">
+          <p class="underline d-inline-block mb-1">
           Open Box
+          </p>
         </a>
 
         <div class="row my-2 align-items-center">
@@ -1195,7 +1413,7 @@
             <h3 class="d-inline-block">
               $95
             </h3>
-            <a href="#" class=" card-link text-muted">
+            <a href="#" class=" card-link text-muted underline">
               <small>
                 12 bids
               </small>
@@ -1210,7 +1428,7 @@
         </div>
 
         <form class="row">
-          <div class="col">
+          <div class="col pr-0">
             <input type="number" class="form-control" id="BidInput" placeholder="$97">
           </div>
           <div class="col-auto">
@@ -1228,13 +1446,15 @@
     </div>
 
 </div>
-            <div class="col-lg-4 mb-3 col-sm-12 col-md-6">
+              <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
+      <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
         
-        <div class="card-img-overlay">
+         <!-- OVERLAYS -->
+        <div class="card-img-overlay mx-3">
 
           <div class="row align-items-center">
             <span class="badge mr-2">
@@ -1258,19 +1478,19 @@
         </div>
 
       </div>
-        
 
-        
-
+      <!-- BODY -->
       <div class="card-body">
 
-        <p class="card-title">
+        <p class="card-title mb-1">
           Keegan fabric set of 2 orange dining chair
         </p>
 
-        <a href="#" class="text-secondary">
+        <a href="#" class="text-secondary ">
           <img src="images/open-box.svg">
+          <p class="underline d-inline-block mb-1">
           Open Box
+          </p>
         </a>
 
         <div class="row my-2 align-items-center">
@@ -1278,7 +1498,7 @@
             <h3 class="d-inline-block">
               $95
             </h3>
-            <a href="#" class=" card-link text-muted">
+            <a href="#" class=" card-link text-muted underline">
               <small>
                 12 bids
               </small>
@@ -1293,7 +1513,7 @@
         </div>
 
         <form class="row">
-          <div class="col">
+          <div class="col pr-0">
             <input type="number" class="form-control" id="BidInput" placeholder="$97">
           </div>
           <div class="col-auto">
@@ -1311,23 +1531,26 @@
     </div>
 
 </div>
+            </div>
           </div>
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+
+          
         </div>
-
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-
-        
       </div>
     </div>
+    
+    
     
     
   </main>
@@ -1340,5 +1563,5 @@
 
 
 
-<script src="./js/index.bundle.js?70110630bffe5057afe8"></script></body>
+<script src="./js/index.bundle.js?57615a39804a2b53f348"></script></body>
 </html>
