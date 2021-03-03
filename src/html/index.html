@@ -18,7 +18,7 @@
 
   <main >
 
-      ${ require('./partials/featured-auction.html') }
+    ${ require('./partials/featured-auction.html') }
 
     <div class="hide-desktop text-center border-top border-bottom">
 
@@ -56,13 +56,13 @@
           ${ require('./partials/filters.html') }
         </div>
 
-        <!-- PRODUCTS -->
+        
         <div class="col-lg-9 col-md-12">
           <div class="row">
             <div class="col">
              <small class="mb-5">Showing 1-78 of 1425 active items</small>
             </div>
-            <div class="col-auto text-right hide-desktop-tablet">
+            <div class="col-auto text-right hide-desktop-tablet pl-0">
               <a href="./index-grid-view.html">
                 <img src="../assets/images/icons/view-grid.svg">
               </a>
@@ -74,6 +74,8 @@
 
           <div class="mb-4 mt-3">
             <div class="row">
+
+              
               ${ require('./partials/product-card.html') }
               ${ require('./partials/product-card.html') }
               ${ require('./partials/product-card.html') }
@@ -86,6 +88,7 @@
               ${ require('./partials/product-card.html') }
               ${ require('./partials/product-card.html') }
               ${ require('./partials/product-card.html') }
+             
             </div>
           </div>
           
