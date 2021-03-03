@@ -9662,6 +9662,13 @@ body {
     border-radius: 4px 0 0 4px;
     border-right: 1px solid #E6E6E6; }
 
+.navbar-dark .navbar-toggler {
+  color: white;
+  border: none; }
+
+.footer {
+  background-color: black; }
+
 .custom-divider::after {
   content: "";
   border-top: 1px solid white;
