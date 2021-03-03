@@ -14,7 +14,7 @@
 <meta name="theme-color" content="#424242">
 
 
-<link href="./css/styles.css?bac6fafa0307c4a754ca" rel="stylesheet"></head>
+<link href="./css/styles.css?4778cc5068b9442d0293" rel="stylesheet"></head>
 <body class="bg-light">
 
   <!--[if IE]>
@@ -32,20 +32,21 @@
   <header class="bg-red">
     <div class="container m-auto">
 
-       <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent">
+       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
           <div class="container-fluid d-block">
 
              <div class="row d-flex align-items-center">
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button> -->
-
-                <div class="col-sm-6 col-md-4">
+                <div class="col-2 d-md-none">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col-5 col-sm-6 col-md-4">
                    <span class="navbar-brand navbar-expand">
                    <img src="images/logo.svg" width="120" height="50" class="d-inline-block align-top rounded" alt="Loveseat Logo">
                    </span>
                 </div>
-                <div class="col-sm-6 col-md-8">
+                <div class="col-5 col-sm-6 col-md-8">
                     <div class="row ml-auto flex-row-reverse">
                         <div class="col-sm-6 col-md-4">
                             <ul class="navbar-nav ml-auto flex-row d-flex justify-content-end">
@@ -67,7 +68,7 @@
                             </ul>
                          </div>
 
-                        <div class="d-sm-none d-md-block col-md-8">
+                        <div class="d-none d-md-block col-md-8">
                            <form class="d-flex search-bar">
                               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                               <button class="btn" type="submit">
@@ -79,10 +80,12 @@
                 </div>
 
                 <div class="d-md-none col-sm-12">
-                    <form class="d-flex">
-                       <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-                       <button class="btn btn-outline-light" type="submit">Search</button>
-                    </form>
+                    <form class="d-flex search-bar">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit">
+                           <img src="images/search.svg">
+                        </button>
+                     </form>
                  </div>
 
              </div>
@@ -91,11 +94,11 @@
              <div class="row d-flex align-items-center ">
                 <div class="col-sm-12 col-md-4 text-white">
                     <div class="dropdown">
-                        <button class="btn text-white btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-transparent text-white dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="images/map-pin.svg">
                             San Diego
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                           <li><a class="dropdown-item" href="#">Action</a></li>
                           <li><a class="dropdown-item" href="#">Another action</a></li>
                           <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -106,16 +109,16 @@
 
                 <div class="collapse navbar-collapse col-md-8" id="navbarSupportedContent">
                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
+                      <li class="nav-item text-center">
                          <a class="nav-link text-white" href="#">Current auction</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item text-center">
                          <a class="nav-link text-white" href="#">How It Works</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item text-center">
                          <a class="nav-link text-white" href="#">Newsletter</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item text-center">
                          <a class="nav-link text-white" href="#">Sell</a>
                       </li>
                    </ul>
@@ -135,8 +138,8 @@
       <div class="bg-white px-lg-5 py-4">
     <div class="container">
         <div class="row" >
-                <div class="col-lg-7 col-md-12 order-lg-1 order-sm-1">
-                    <h4>Mid century modern for every room, designer linens, brand new mattresses, danish style, cabinets, vintage seating & more</h4>
+                <div class="col-lg-7 col-md-12 order-lg-1 order-1">
+                    <h4 class="h4-responsive">Mid century modern for every room, designer linens, brand new mattresses, danish style, cabinets, vintage seating & more</h4>
                     <p>Solid Sideboards, Lucite Legged Chesterfield Sofa, Leather Pushback Recliner... 
                         <!-- <span>
                         , Top-Of-Line Vacuums, Velvet Side Chairs, Carson Carrington End Table,Leather Saddle Desk Chair, Vintage Wooden High Chair, Vera Wang Linens, Foam Mattresss Toppers, Hotel Colletction Bedding Sets, Outdoor Lighting, Luggage, Decorating Kits, Ice Cream Maeker ans more!
@@ -144,10 +147,11 @@
             
                         </span> -->
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-6 order-lg-2 order-sm-3 text-right align-self-lg-start align-self-md-center">
+
+                <div class="col-lg-2 col-6 order-lg-2 order-3 text-right align-self-lg-start align-self-md-center ">
                     <button type="button" class="btn btn-outline btn-outline-primary">Join to Bid</button>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 order-lg-3 order-sm-2 text-sm-left text-lg-right">
+                <div class="col-lg-3 col-6 order-lg-3 order-2 text-sm-left text-lg-right">
                     <p class="display-title my-0">
                         Ends In
                         <span class="text-primary font-weight-bold d-block">
@@ -157,6 +161,7 @@
                     <p class="hide-tablet-mobile text-muted">Sun 17, Jan 2021 - 7 p.m. PT</p>
                 </div>
         </div> 
+
         <div class="row hide-tablet-mobile" >
             <div class="col-9 ">
                 <div class="d-inline-block me-auto mr-3">
@@ -506,10 +511,21 @@
 
         <!-- PRODUCTS -->
         <div class="col-lg-9 col-md-12">
+          <div class="row">
+            <div class="col">
+             <small class="mb-5">Showing 1-78 of 1425 active items</small>
+            </div>
+            <div class="col-auto text-right hide-desktop-tablet">
+              <a href="./index-grid-view.html">
+                <img src="images/view-grid.svg">
+              </a>
+              <a href="#">
+                <img src="images/view-list.svg">
+              </a>            
+            </div>
+          </div>
 
-          <p>Showing 1-78 of 1425 active items</p>
-
-          <div class="mb-4">
+          <div class="mb-4 mt-3">
             <div class="row">
               <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
@@ -517,7 +533,7 @@
       <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
-        
+
          <!-- OVERLAYS -->
         <div class="card-img-overlay mx-3">
 
@@ -560,7 +576,7 @@
 
         <div class="row my-2 align-items-center">
           <div class="col">
-            <h3 class="d-inline-block">
+            <h3 class="font-weight-normal d-inline-block">
               $95
             </h3>
             <a href="#" class=" card-link text-muted underline">
@@ -569,7 +585,7 @@
               </small>
             </a>
             </div>
-          
+
           <p class="text-muted col-auto mb-0">
             <small>
               1d 8h 47m
@@ -596,13 +612,14 @@
     </div>
 
 </div>
+
               <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
       <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
-        
+
          <!-- OVERLAYS -->
         <div class="card-img-overlay mx-3">
 
@@ -645,7 +662,7 @@
 
         <div class="row my-2 align-items-center">
           <div class="col">
-            <h3 class="d-inline-block">
+            <h3 class="font-weight-normal d-inline-block">
               $95
             </h3>
             <a href="#" class=" card-link text-muted underline">
@@ -654,7 +671,7 @@
               </small>
             </a>
             </div>
-          
+
           <p class="text-muted col-auto mb-0">
             <small>
               1d 8h 47m
@@ -681,13 +698,14 @@
     </div>
 
 </div>
+
               <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
       <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
-        
+
          <!-- OVERLAYS -->
         <div class="card-img-overlay mx-3">
 
@@ -730,7 +748,7 @@
 
         <div class="row my-2 align-items-center">
           <div class="col">
-            <h3 class="d-inline-block">
+            <h3 class="font-weight-normal d-inline-block">
               $95
             </h3>
             <a href="#" class=" card-link text-muted underline">
@@ -739,7 +757,7 @@
               </small>
             </a>
             </div>
-          
+
           <p class="text-muted col-auto mb-0">
             <small>
               1d 8h 47m
@@ -766,13 +784,14 @@
     </div>
 
 </div>
+
               <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
       <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
-        
+
          <!-- OVERLAYS -->
         <div class="card-img-overlay mx-3">
 
@@ -815,7 +834,7 @@
 
         <div class="row my-2 align-items-center">
           <div class="col">
-            <h3 class="d-inline-block">
+            <h3 class="font-weight-normal d-inline-block">
               $95
             </h3>
             <a href="#" class=" card-link text-muted underline">
@@ -824,7 +843,7 @@
               </small>
             </a>
             </div>
-          
+
           <p class="text-muted col-auto mb-0">
             <small>
               1d 8h 47m
@@ -851,13 +870,14 @@
     </div>
 
 </div>
+
               <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
       <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
-        
+
          <!-- OVERLAYS -->
         <div class="card-img-overlay mx-3">
 
@@ -900,7 +920,7 @@
 
         <div class="row my-2 align-items-center">
           <div class="col">
-            <h3 class="d-inline-block">
+            <h3 class="font-weight-normal d-inline-block">
               $95
             </h3>
             <a href="#" class=" card-link text-muted underline">
@@ -909,7 +929,7 @@
               </small>
             </a>
             </div>
-          
+
           <p class="text-muted col-auto mb-0">
             <small>
               1d 8h 47m
@@ -936,13 +956,14 @@
     </div>
 
 </div>
+
               <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
       <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
-        
+
          <!-- OVERLAYS -->
         <div class="card-img-overlay mx-3">
 
@@ -985,7 +1006,7 @@
 
         <div class="row my-2 align-items-center">
           <div class="col">
-            <h3 class="d-inline-block">
+            <h3 class="font-weight-normal d-inline-block">
               $95
             </h3>
             <a href="#" class=" card-link text-muted underline">
@@ -994,7 +1015,7 @@
               </small>
             </a>
             </div>
-          
+
           <p class="text-muted col-auto mb-0">
             <small>
               1d 8h 47m
@@ -1021,13 +1042,14 @@
     </div>
 
 </div>
+
               <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
       <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
-        
+
          <!-- OVERLAYS -->
         <div class="card-img-overlay mx-3">
 
@@ -1070,7 +1092,7 @@
 
         <div class="row my-2 align-items-center">
           <div class="col">
-            <h3 class="d-inline-block">
+            <h3 class="font-weight-normal d-inline-block">
               $95
             </h3>
             <a href="#" class=" card-link text-muted underline">
@@ -1079,7 +1101,7 @@
               </small>
             </a>
             </div>
-          
+
           <p class="text-muted col-auto mb-0">
             <small>
               1d 8h 47m
@@ -1106,13 +1128,14 @@
     </div>
 
 </div>
+
               <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
       <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
-        
+
          <!-- OVERLAYS -->
         <div class="card-img-overlay mx-3">
 
@@ -1155,7 +1178,7 @@
 
         <div class="row my-2 align-items-center">
           <div class="col">
-            <h3 class="d-inline-block">
+            <h3 class="font-weight-normal d-inline-block">
               $95
             </h3>
             <a href="#" class=" card-link text-muted underline">
@@ -1164,7 +1187,7 @@
               </small>
             </a>
             </div>
-          
+
           <p class="text-muted col-auto mb-0">
             <small>
               1d 8h 47m
@@ -1191,13 +1214,14 @@
     </div>
 
 </div>
+
               <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
       <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
-        
+
          <!-- OVERLAYS -->
         <div class="card-img-overlay mx-3">
 
@@ -1240,7 +1264,7 @@
 
         <div class="row my-2 align-items-center">
           <div class="col">
-            <h3 class="d-inline-block">
+            <h3 class="font-weight-normal d-inline-block">
               $95
             </h3>
             <a href="#" class=" card-link text-muted underline">
@@ -1249,7 +1273,7 @@
               </small>
             </a>
             </div>
-          
+
           <p class="text-muted col-auto mb-0">
             <small>
               1d 8h 47m
@@ -1276,13 +1300,14 @@
     </div>
 
 </div>
+
               <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
       <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
-        
+
          <!-- OVERLAYS -->
         <div class="card-img-overlay mx-3">
 
@@ -1325,7 +1350,7 @@
 
         <div class="row my-2 align-items-center">
           <div class="col">
-            <h3 class="d-inline-block">
+            <h3 class="font-weight-normal d-inline-block">
               $95
             </h3>
             <a href="#" class=" card-link text-muted underline">
@@ -1334,7 +1359,7 @@
               </small>
             </a>
             </div>
-          
+
           <p class="text-muted col-auto mb-0">
             <small>
               1d 8h 47m
@@ -1361,13 +1386,14 @@
     </div>
 
 </div>
+
               <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
       <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
-        
+
          <!-- OVERLAYS -->
         <div class="card-img-overlay mx-3">
 
@@ -1410,7 +1436,7 @@
 
         <div class="row my-2 align-items-center">
           <div class="col">
-            <h3 class="d-inline-block">
+            <h3 class="font-weight-normal d-inline-block">
               $95
             </h3>
             <a href="#" class=" card-link text-muted underline">
@@ -1419,7 +1445,7 @@
               </small>
             </a>
             </div>
-          
+
           <p class="text-muted col-auto mb-0">
             <small>
               1d 8h 47m
@@ -1446,13 +1472,14 @@
     </div>
 
 </div>
+
               <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
 
     <div class="card">
       <!-- TOP -->
       <div class="card-image position-relative">
         <img src="images/product.png" class="card-img-top">
-        
+
          <!-- OVERLAYS -->
         <div class="card-img-overlay mx-3">
 
@@ -1495,7 +1522,7 @@
 
         <div class="row my-2 align-items-center">
           <div class="col">
-            <h3 class="d-inline-block">
+            <h3 class="font-weight-normal d-inline-block">
               $95
             </h3>
             <a href="#" class=" card-link text-muted underline">
@@ -1504,7 +1531,7 @@
               </small>
             </a>
             </div>
-          
+
           <p class="text-muted col-auto mb-0">
             <small>
               1d 8h 47m
@@ -1531,21 +1558,50 @@
     </div>
 
 </div>
+
             </div>
           </div>
-
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#">
+                 <img src="images/chevron-left.svg" class="align-self-center">
+                  <span class="hide-mobile">
+                    Previous
+                  </span>
+                </a>
+              </li>
               <li class="page-item"><a class="page-link" href="#">1</a></li>
               <li class="page-item"><a class="page-link" href="#">2</a></li>
               <li class="page-item"><a class="page-link" href="#">3</a></li>
               <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  <span class="hide-mobile">
+                    Next
+                  </span>
+                 <img src="images/chevron-right.svg" class="align-self-center">
+                </a>
+              </li>
             </ul>
           </nav>
 
-          
+          <div class="container d-flex justify-content-center my-5">
+    <div class="row card-style py-4 px-md-3 px-sm-1">
+
+        <div class="col">
+            <img src="images/notification.svg" class="d-inline-block responsive-img">
+        </div>
+
+        <div class="col-auto align-self-center">
+            <p>Get Notified</p>
+            <p class="text-muted text-max-width-50 p-responsive">NEW: Receive an email when we get what you're looking for!</p>
+            <button type="button" class="btn btn-primary mt-2">Create Alert</button>
+        </div>
+
+    </div>
+</div>
         </div>
       </div>
     </div>
@@ -1556,12 +1612,69 @@
   </main>
 
   <footer class="footer">
-  <div class="container py-3">
-    <small>2021 &copy; Loveseat</small>
-  </div>
-</footer>
+   <div class="container py-3">
+       <div class="row">
+         <div class="col-lg-auto col-md-12 col-sm-12 order-lg-1 order-sm-1">
+           <ul class="navbar-nav flex-md-row d-md-flex">
+               <li class="nav-item mx-2">
+                   <a href="#" class="text-white">Contact</a>
+                </li>
+                <li class="nav-item mx-2">
+                   <a href="#" class="text-white">Help</a>
+                </li>
+                <li class="nav-item mx-2">
+                   <a href="#" class="text-white">About Us</a>
+                </li>
+                <li class="nav-item mx-2">
+                   <a href="#" class="text-white">Sell</a>
+                </li>
+                <li class="nav-item mx-2">
+                   <a href="#" class="text-white">Newsletter</a>
+                </li>
+                <li class="nav-item mx-2">
+                   <a href="#" class="text-white">Blog</a>
+                </li>
+                <li class="nav-item mx-2">
+                   <a href="#" class="text-white">Privacy</a>
+                </li>
+                <li class="nav-item mx-2">
+                   <a href="#" class="text-white">Terms of Service</a>
+                </li>
+           </ul>
+         </div>
+         <div class="col-lg-auto col-md-12 col-sm-12 text-center order-lg-2 order-sm-3">
+             <small>
+                2021 &copy; Loveseat
+             </small>
+         </div>
+         <div class="col-lg-auto  col-md-12 col-sm-12 order-lg-3 order-md-2 my-lg-0 my-sm-3">
+             <ul class="navbar-nav ml-auto flex-row d-flex justify-content-center">
+                 <li class="nav-item mx-2">
+                    <a href="#">
+                    <img width="20px" src="images/instagram.svg">
+                    </a>
+                 </li>
+                 <li class="nav-item mx-2">
+                    <a href="#">
+                    <img width="20px" src="images/facebook.svg">
+                    </a>
+                 </li>
+                 <li class="nav-item mx-2">
+                    <a href="#">
+                    <img width="20px" src="images/twitter.svg">
+                    </a>
+                 </li>
+                 <li class="nav-item mx-2">
+                     <a href="#">
+                     <img width="20px" src="images/pinterest.svg">
+                     </a>
+                  </li>
+              </ul>
+         </div>
+       </div>
+   </div>
+ </footer>
 
 
-
-<script src="./js/index.bundle.js?bac6fafa0307c4a754ca"></script></body>
+<script src="./js/index.bundle.js?4778cc5068b9442d0293"></script></body>
 </html>

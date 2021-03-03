@@ -4,9 +4,6 @@
 
 $danger: #ED412C;
 
-body{
-    font-family: "inter", sans-serif;
-}
 
 .bg-red {
     background-color: #ED412C;
@@ -15,12 +12,53 @@ body{
     }
 }
 
+// FONT
+
+body{
+    font-family: "inter", sans-serif;
+}
+
 .display-title{
     font-size: 1.75rem;
 }
 
+
+h6, h5, h4, h3, h2, h1 {
+    font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+    .h4-responsive{
+        font-size: 1rem;
+    }
+    .display-title{
+        font-size: 1rem;
+    }
+ }
+
+@media (max-width: 991.98px) {
+    .h4-responsive{
+        font-size: 1.125rem;
+    }
+    .display-title{
+        font-size: 1.125rem;
+    }
+    .p-responsive{
+        font-size: 0.875rem;
+    }
+}
+@media (min-width: 992px) {
+    .h4-responsive{
+        font-size: 1.25rem;
+    }
+
+}
 .underline {
     text-decoration: underline;
+}
+
+.text-max-width-50{
+    max-width: 16rem;
 }
 
 // CONTAINERS
@@ -36,6 +74,11 @@ body{
     -webkit-border-radius: 50px;
     border-radius: 50px;
 }
+.price-badge{
+    background: rgba(247, 247, 247, 0.75);
+    border-radius: 4px;
+    bottom: 0;
+}
 
 .custom-badge{
     bottom: -10px;
@@ -46,7 +89,6 @@ body{
         color: #0078D6;
         text-decoration: underline;
     }
-
 }
 
 // FILTERS
@@ -71,6 +113,11 @@ body{
         border-radius: 4px;
         border: none;
     }
+}
+.card-style{
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
 }
 
 // BUTTONS
@@ -97,6 +144,28 @@ body{
 
     }
 }
+// Pagination
+.page-link{
+    background:none;
+    border: none;
+    color: black;
+}
+.page-link:hover{
+    background: #FFEBE9;
+    border: none;
+    color: #ED412C;
+    border-radius: 2px;
+}
+
+// FOOTER
+.navbar-dark .navbar-toggler {
+    color: white;
+    border: none;
+}
+
+.footer {
+    background-color: black;
+}
 
 // OTHERS
 
@@ -106,19 +175,35 @@ body{
     position: absolute;
 }
 
-@media screen and (max-width: 575px) {
-
-}
 
 // MEDIA QUERIES
-@media (max-width: 768px) {
+
+@media screen and (max-width: 575px) {
+    .responsive-img{
+        max-height: 4rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .responsive-img{
+        max-width: 100%;
+    }
+    .hide-mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
     .hide-tablet-mobile{
         display: none;
     }
-    .display-title{
-        font-size: 1.25rem;
-    }
 
+}
+@media (min-width: 768px) {
+    .hide-desktop-tablet{
+        display: none;
+    }
 }
 @media (min-width: 992px) {
     .hide-desktop{
