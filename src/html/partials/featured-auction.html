@@ -31,7 +31,10 @@
                 <img src="../../assets/images/icons/map-marker.svg">
                 8535 Production Ave, San Diego, CA 92121
                 </div>
-                <a href="#" class="link-primary mr-3 text-danger">Auction terms</a>
+                <a href="#" class="link-primary mr-3 text-danger" type="button" data-toggle="modal" data-target="#AuctionTerms">Auction terms</a>
+                <div class="modal fade" id="AuctionTerms" tabindex="-1" role="dialog" aria-labelledby="AuctionTerms" aria-hidden="true">
+                    ${ require('./partials/modal-auction-terms.html') }
+                </div>
                 <a href="#" class="link-primary mr-auto text-danger">Bid Increments</a>
             </div>
             

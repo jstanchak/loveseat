@@ -9606,6 +9606,12 @@ body {
 .display-title {
   font-size: 1.75rem; }
 
+.display-title-4 {
+  font-size: 1.5rem; }
+
+.text-medium {
+  font-weight: 600; }
+
 h6, h5, h4, h3, h2, h1 {
   font-weight: bold; }
 
@@ -9625,7 +9631,9 @@ h6, h5, h4, h3, h2, h1 {
 
 @media (min-width: 992px) {
   .h4-responsive {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+  .display-title-4 {
+    font-size: 2rem; } }
 
 .underline {
   text-decoration: underline; }
@@ -9678,8 +9686,20 @@ h6, h5, h4, h3, h2, h1 {
     border-radius: 4px;
     border: none; }
 
+.card-style-responsive input {
+  font-size: 0.9rem;
+  padding: 5px 16px;
+  background: #F7F7F7;
+  border-radius: 4px;
+  border: none; }
+
 .card-style {
   background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px; }
+
+.card-style-gray {
+  background: #F7F7F7;
   border: 1px solid #E6E6E6;
   border-radius: 4px; }
 
@@ -9725,15 +9745,13 @@ h6, h5, h4, h3, h2, h1 {
 .footer {
   background-color: black; }
 
+.breadcrumb {
+  background: none; }
+
 .custom-divider::after {
   content: "";
   border-top: 1px solid white;
   position: absolute; }
-
-@media screen and (max-width: 575px) {
-  .responsive-img {
-    max-height: 4rem;
-    margin-bottom: 1rem; } }
 
 @media (max-width: 767.98px) {
   .responsive-img {
@@ -9749,7 +9767,17 @@ h6, h5, h4, h3, h2, h1 {
 
 @media (min-width: 768px) {
   .hide-desktop-tablet {
-    display: none; } }
+    display: none; }
+  .card-style-responsive {
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px; }
+    .card-style-responsive input {
+      font-size: 0.9rem;
+      padding: 5px 16px;
+      background: #F7F7F7;
+      border-radius: 4px;
+      border: none; } }
 
 @media (min-width: 992px) {
   .hide-desktop {

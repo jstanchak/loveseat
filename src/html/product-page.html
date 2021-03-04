@@ -13,23 +13,176 @@
 
     ${ require('./partials/browserupgrade.html') }
   
-    ${ require('./partials/header2.html') }
+    ${ require('./partials/header.html') }
   
     <main >
-        <div class="container">
-            <a href="#">
+        <div class="container mt-4 pl-md-0 mb-3 mb-lg-0">
+            <a href="./index.html" class="mr-5">
+                <img src="../assets/images/icons/arrow-left.svg">
                 Back to List
             </a>
-        </div>
-        <div class="container card-style">
-            <div class="row">
-
+            <div class="d-none d-lg-inline-block">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <small class="d-flex">
+                            <li class="breadcrumb-item"><a href="#">Auctions</a></li>
+                            <li class="breadcrumb-item"><a href="#">Mid Century Modern For Every Room</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Keegan fabric set of 2 orange dining chair</li>
+                        </small>
+                    </ol>
+                  </nav>
             </div>
-            <div class="row">
+        </div>
+
+        <div class="container card-style py-4 mb-5">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-5 col-lg- px-4">
+                    <img src="../assets/images/product-chair.png" class="w-100">
+                </div>
+                <div class="col-12 col-md-7 col-lg-5 p-0 pr-4">
+                
+                    <div class=" py-3 px-4 card-style-responsive ">
+                        <div class="row">
+                            <div class="col">
+                                <small class="text-muted">Lot #150809</small>
+                                <p>Keegan fabric set of 2 orange dining chair</p>
+                            </div>
+                            <div class="col-auto">
+                                <img src="../assets/images/icons/notification-disabled.svg" class="mr-2">
+                                <img src="../assets/images/icons/heart-disabled.svg">
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-6 pr-0">
+                                <small class="text-muted">CONDITION</small>
+                                <a href="#" class="d-block text-secondary">
+                                    <img src="../assets/images/icons/item-conditions/sealed-box.svg">
+                                    Sealed Box
+                                    <img src="../assets/images/icons/warning.svg">
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <small class="text-muted">TYPE</small>
+                                <p class="text-muted text-medium">Overstock</p>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-6 pr-0">
+                                <small class="text-muted">COLOR </small>
+                                <p class="text-muted text-medium">Carbon gray</p>
+                            </div>
+                            <div class="col-6">
+                                <small class="text-muted">SIZE</small>
+                                <p class="text-muted text-medium">King</p>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-7 pr-0 col-md-6">
+                                <p class="text-muted text-medium d-inline-block mb-1">Highest Bid</p>
+                                <small class="text-muted d-inline-block"><u>(12 bids)</u></small>
+                                <h2 class="text-medium">$92</h2>
+                                <a href="#">
+                                    Retail price $599
+                                    <img src="../assets/images/icons/arrow-right.svg">
+                                </a>
+                            </div>
+                            <div class="col-5 col-md-6">
+                                <p class="text-muted text-medium d-inline-block mb-1">Ends In</p>
+                                <p class="display-title">1d 8h 47m</p>
+                            </div>
+                        </div>
+                        <form class="row mt-4">
+                            <div class="col pr-0">
+                            <input type="number" class="form-control" id="BidInput" placeholder="$97">
+                            </div>
+                            <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">Bid</button>
+                            </div>
+                        </form>
+                
+                        <div class="row align-items-center mt-2">
+                            <img src="../assets/images/icons/warning.svg" class="col-auto pr-0 d-inline-block ">
+                            <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
+
+            <div class="row card-style-gray mx-1 py-4 my-4">
+                <div class="col-12 mb-3">
+                    <p class="display-title-4">
+                        Auction Information
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-auto col-lg-12 mb-lg-3">
+                            <img src="../assets/images/icons/end-time.svg">
+                        </div>
+                        <div class="col mb-5">
+                            <p class="mb-1 text-muted text-medium">AUCTION END TIME</p>
+                            <p class="mb-2">Wed Ene 20, 2021, 7:00pm PT</p>
+                            <small class="text-primary">
+                                <img src="../assets/images/icons/warning.svg">
+                                Extended Bidding
+                            </small>
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-auto col-lg-12 mb-lg-3">
+                            <img src="../assets/images/icons/pickup.svg">
+                        </div>
+                        <div class="col mb-5">
+                            <p class="mb-1 text-muted text-medium">PICKUP DATE</p>
+                            <p class="mb-2">Wed Ene 20, 2021, 7:00pm PT <br> Sat Jan 23, 2021 10am-5pm</p>
+                            <small class="text-primary">
+                                Loveseat San Diego Warehouse
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-auto col-lg-12 mb-lg-3">
+                            <img src="../assets/images/icons/delivery.svg">
+                        </div>
+                        <div class="col mb-5">
+                            <p class="mb-1 text-muted text-medium">DELIVERY</p>
+                            <p class="mb-2 text-muted">(Via GoShare)</p>
+                            <p class="text-primary">
+                                Rates start at $39,99
+                                <img src="../assets/images/icons/arrow-right.svg">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-auto col-lg-12 mb-lg-3">
+                            <img src="../assets/images/icons/terms.svg">
+                        </div>
+                        <div class="col">
+                            <p class="mb-1 text-muted text-medium">ALL SALES ARE FINAL </p>
+                            <p class="mb-2 text-muted">(And items are sold AS IS)</p>
+                            <p class="">
+                                Read <a href="#" class="d-inline-block"> Terms & Conditions</a> of the auctions
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+            </div>
+
+            <div class="row my-4 mx-1">
+                <div class="col-12 col-md-6 my-2 px-1">
                     <p>
                         Description
                     </p>
@@ -40,10 +193,9 @@
                         Finish: Carbon.
                     </p>
                 </div>
-                <div class="col-12 col-md-6">
-
+                <div class="col-12 col-md-6 img-tablet-fix">
+                    ${ require('./partials/notifications-alert.html') } 
                 </div>
-                ${ require('./partials/notifications-alert.html') } 
             </div>
         </div>
 
