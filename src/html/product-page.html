@@ -55,11 +55,14 @@
                         <div class="row my-2">
                             <div class="col-6 pr-0">
                                 <small class="text-muted">CONDITION</small>
-                                <a href="#" class="d-block text-secondary">
+                                <a href="#" class="d-block text-secondary" type="button" data-toggle="modal" data-target="#ItemState">
                                     <img src="../assets/images/icons/item-conditions/sealed-box.svg">
                                     Sealed Box
                                     <img src="../assets/images/icons/warning.svg">
                                 </a>
+                                <div class="modal fade" id="ItemState" tabindex="-1" role="dialog" aria-labelledby="ItemState" aria-hidden="true">
+                                    ${ require('./partials/modal-item-state.html') }
+                                </div>
                             </div>
                             <div class="col-6">
                                 <small class="text-muted">TYPE</small>
@@ -79,7 +82,14 @@
                         <div class="row my-3">
                             <div class="col-7 pr-0 col-md-6">
                                 <p class="text-muted text-medium d-inline-block mb-1">Highest Bid</p>
-                                <small class="text-muted d-inline-block"><u>(12 bids)</u></small>
+                                <small class="text-muted d-inline-block">
+                                    <a href="#" class=" card-link text-muted underline" type="button" data-toggle="modal" data-target="#BidHistory">
+                                        (12 bids)
+                                    </a>
+                                </small>
+                                <div class="modal fade" id="BidHistory" tabindex="-1" role="dialog" aria-labelledby="BidHistory" aria-hidden="true">
+                                    ${ require('./partials/modal-bid-history.html') }
+                                  </div>
                                 <h2 class="text-medium">$92</h2>
                                 <a href="#">
                                     Retail price $599
@@ -96,9 +106,12 @@
                             <input type="number" class="form-control" id="BidInput" placeholder="$97">
                             </div>
                             <div class="col-auto">
-                            <button type="submit" class="btn btn-primary">Bid</button>
+                            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#ConfirmBid">Bid</button>
                             </div>
                         </form>
+                        <div class="modal fade" id="ConfirmBid" tabindex="-1" role="dialog" aria-labelledby="ConfirmBid" aria-hidden="true">
+                            ${ require('./partials/modal-confirm-bid.html') }
+                        </div>
                 
                         <div class="row align-items-center mt-2">
                             <img src="../assets/images/icons/warning.svg" class="col-auto pr-0 d-inline-block ">
@@ -171,8 +184,15 @@
                             <p class="mb-1 text-muted text-medium">ALL SALES ARE FINAL </p>
                             <p class="mb-2 text-muted">(And items are sold AS IS)</p>
                             <p class="">
-                                Read <a href="#" class="d-inline-block"> Terms & Conditions</a> of the auctions
+                                Read 
+                                <a href="#" class="d-inline-block" type="button" data-toggle="modal" data-target="#AuctionTerms"> 
+                                    Terms & Conditions
+                                </a> 
+                                of the auctions
                             </p>
+                            <div class="modal fade" id="AuctionTerms" tabindex="-1" role="dialog" aria-labelledby="AuctionTerms" aria-hidden="true">
+                                ${ require('./partials/modal-auction-terms.html') }
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -182,7 +202,7 @@
             </div>
 
             <div class="row my-4 mx-1">
-                <div class="col-12 col-md-6 my-2 px-1">
+                <div class="col-12 col-md-6 my-2 pl-1 pr-5">
                     <p>
                         Description
                     </p>

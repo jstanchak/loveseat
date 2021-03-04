@@ -24,11 +24,12 @@
             </div>
 
             <div class="row position-absolute custom-badge">
-              <span class="badge pb-1 px-2">
-                <small>
-                  Overstock
-                </small>
-              </span>
+              <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
+                Overstock
+              </a>
+              <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
+                    ${ require('./modal-item-type.html') }
+              </div>
             </div>
           </div>
 
@@ -41,23 +42,29 @@
             Keegan fabric set of 2 orange dining chair
           </p>
 
-          <a href="#" class="text-secondary ">
+          <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="../../assets/images/icons/item-conditions/open-box.svg">
             <p class="underline d-inline-block mb-1">
             Open Box
             </p>
           </a>
+          <div class="modal fade" id="ItemState" tabindex="-1" role="dialog" aria-labelledby="ItemState" aria-hidden="true">
+            ${ require('./modal-item-state.html') }
+          </div>
 
           <div class="row my-2 align-items-center">
             <div class="col">
               <h3 class="font-weight-normal d-inline-block">
                 $95
               </h3>
-              <a href="#" class=" card-link text-muted underline">
+              <a href="#" class=" card-link text-muted underline" type="button" data-toggle="modal" data-target="#BidHistory">
                 <small>
                   12 bids
                 </small>
               </a>
+              <div class="modal fade" id="BidHistory" tabindex="-1" role="dialog" aria-labelledby="BidHistory" aria-hidden="true">
+                ${ require('./modal-bid-history.html') }
+              </div>
               </div>
 
             <p class="text-muted col-auto mb-0">
@@ -72,7 +79,10 @@
               <input type="number" class="form-control" id="BidInput" placeholder="$97">
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-primary">Bid</button>
+              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#ConfirmBid">Bid</button>
+            </div>
+            <div class="modal fade" id="ConfirmBid" tabindex="-1" role="dialog" aria-labelledby="ConfirmBid" aria-hidden="true">
+              ${ require('./modal-confirm-bid.html') }
             </div>
           </form>
 
