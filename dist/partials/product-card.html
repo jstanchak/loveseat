@@ -1,4 +1,4 @@
-<head><link href=".././css/styles.css?13962020d640ff721453" rel="stylesheet"></head><a href="./product-page.html" class="text-dark">
+<head><link href=".././css/styles.css?0f6167e8ddd1c27c704e" rel="stylesheet"></head><a href="./product-page.html" class="text-dark">
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -27,32 +27,61 @@
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
-              <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title" id="ItemType">Item Type</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-
-      <div class="modal-body">
-        ...
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-      
-    </div>
-</div>
-              </div>
             </div>
           </div>
+          <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+  <div class="modal-content">
 
+    <div class="modal-header">
+
+      <img src="images/item-state.svg">
+
+      <h4 class="modal-title px-4 align-self-center" id="ItemType">Item Type</h4>
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+    </div>
+
+    
+    <div class="modal-body mx-3">
+
+      <div class="row mb-2">
+        <p class="text-muted text-medium mb-1  col-12">
+          OVERSTOCK
+        </p>
+        <p class="col-12">
+          Item sold because there is over stock of it
+        </p>
+      </div>
+      <div class="row mb-2">
+        <p class="text-muted text-medium mb-1 col-12">
+          CUSTOMER RETURNED
+        </p>
+        <p class="col-12">
+          The customer returned the item.
+        </p>
+      </div>
+      <div class="row mb-2">
+        <p class="text-muted text-medium mb-1  col-12">
+          CONSIGNED
+        </p>
+        <p class="col-12">
+          The article does not belong to us, we sell it by consignment
+        </p>
+      </div>
+   
+    
+
+
+    </div>
+
+    
+  </div>
+</div>
+          </div>
         </div>
 
         <!-- BODY -->
@@ -68,25 +97,120 @@
             Open Box
             </p>
           </a>
-          <div class="modal fade" id="ItemState" tabindex="-1" role="dialog" aria-labelledby="ItemState" aria-hidden="true">
+          <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemState" aria-hidden="true">
             <div class="modal-dialog" role="document">
     <div class="modal-content">
 
       <div class="modal-header">
-        <h5 class="modal-title" id="ItemState">Item State</h5>
+
+        <img src="images/item-state.svg">
+
+        <h4 class="modal-title px-4 align-self-center" id="ItemState">Item State</h4>
+
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+
       </div>
 
-      <div class="modal-body">
-        ...
+      
+      <div class="modal-body mx-3">
+        
+      <div class="row mb-2">
+        <div class="col-2 pr-0 pr-md-3">
+          <img src="images/sealed-box.svg" class="pt-1 w-100">
+        </div>
+        <div class="col">
+          <p class="text-muted text-medium mb-1">
+            SEALED BOX
+          </p>
+          <p>
+            The Item is in a sealed box.
+          </p>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-2 pr-0 pr-md-3">
+          <img src="images/open-box.svg" class="pt-1 w-100">
+        </div>
+        <div class="col">
+          <p class="text-muted text-medium mb-1">
+            OPEN BOX
+          </p>
+          <p>
+            The item has a box, but it has already been opened.
+          </p>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-2 pr-0 pr-md-3">
+          <img src="images/no-box.svg" class="pt-1 w-100">
+        </div>
+        <div class="col">
+          <p class="text-muted text-medium mb-1">
+            NO BOX
+          </p>
+          <p>
+            The Item has no box.
+          </p>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-2 pr-0 pr-md-3">
+          <img src="images/used.svg" class="pt-1 w-100">
+        </div>
+        <div class="col">
+          <p class="text-muted text-medium mb-1">
+            USED
+          </p>
+          <p>
+            The Item isn’t new.
+          </p>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-2 pr-0 pr-md-3">
+          <img src="images/partial.svg" class="pt-1 w-100">
+        </div>
+        <div class="col">
+          <p class="text-muted text-medium mb-1">
+            PARTIAL
+          </p>
+          <p>
+            The item is incomplete. Has a missing piece.
+          </p>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-2 pr-0 pr-md-3">
+          <img src="images/damaged.svg" class="pt-1 w-100">
+        </div>
+        <div class="col">
+          <p class="text-muted text-medium mb-1">
+            DAMAGED
+          </p>
+          <p>
+            The product has any part damaged or broken.
+          </p>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-2 pr-0 pr-md-3">
+          <img src="images/unknown.svg" class="pt-1 w-100">
+        </div>
+        <div class="col">
+          <p class="text-muted text-medium mb-1">
+            UNKNOWN
+          </p>
+          <p>
+            Item status is unknown
+          </p>
+        </div>
       </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
       </div>
+
       
     </div>
 </div>
@@ -104,21 +228,141 @@
               </a>
               <div class="modal fade" id="BidHistory" tabindex="-1" role="dialog" aria-labelledby="BidHistory" aria-hidden="true">
                 <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="BidHistory">Bid History</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <img src="images/bid-history.svg">
+
+      <h4 class="modal-title px-4 align-self-center" id="BidHistory">Bid History</h4>
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
     </div>
+
+    
+    <div class="modal-body mx-3">
+
+      <p>
+        When you place a bid, the price does not automatically increase to that number.
+      </p>
+      <p>
+        Instead, that is your maximum bid and the price increases by the following increments as other bids are placed.
+      </p>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr class="text-muted text-medium">
+            <th scope="col">Time</th>
+            <th scope="col">Bidder</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <small>
+                Fri 2/14/2021
+              <span class="d-none d-md-inline-block">
+                -
+              </span>
+              <span class="d-block d-md-inline-block">
+                6:55 p.m.
+              </span>
+              </small>
+            </td>
+            <td>3f1a72</td>
+            <td>$160</td>
+          </tr>
+          <tr>
+            <td>
+              <small>
+                Fri 2/14/2021
+              <span class="d-none d-md-inline-block">
+                -
+              </span>
+              <span class="d-block d-md-inline-block">
+                6:55 p.m.
+              </span>
+              </small>
+            </td>
+            <td>3f1a72</td>
+            <td>$160</td>
+          </tr>
+          <tr>
+            <td>
+              <small>
+                Fri 2/14/2021
+              <span class="d-none d-md-inline-block">
+                -
+              </span>
+              <span class="d-block d-md-inline-block">
+                6:55 p.m.
+              </span>
+              </small>
+            </td>
+            <td>3f1a72</td>
+            <td>$160</td>
+          </tr>
+          <tr>
+            <td>
+              <small>
+                Fri 2/14/2021
+              <span class="d-none d-md-inline-block">
+                -
+              </span>
+              <span class="d-block d-md-inline-block">
+                6:55 p.m.
+              </span>
+              </small>
+            </td>
+            <td>3f1a72</td>
+            <td>$160</td>
+          </tr>
+          <tr>
+            <td>
+              <small>
+                Fri 2/14/2021
+              <span class="d-none d-md-inline-block">
+                -
+              </span>
+              <span class="d-block d-md-inline-block">
+                6:55 p.m.
+              </span>
+              </small>
+            </td>
+            <td>3f1a72</td>
+            <td>$160</td>
+          </tr>
+          <tr>
+            <td>
+              <small>
+                Fri 2/14/2021
+              <span class="d-none d-md-inline-block">
+                -
+              </span>
+              <span class="d-block d-md-inline-block">
+                6:55 p.m.
+              </span>
+              </small>
+            </td>
+            <td>3f1a72</td>
+            <td>$160</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+   
+    
+
+
+    </div>
+
+    
+  </div>
 </div>
               </div>
               </div>
@@ -141,20 +385,66 @@
               <div class="modal-dialog" role="document">
     <div class="modal-content">
 
-      <div class="modal-header">
+      <div class="modal-header no-border">
         <h5 class="modal-title" id="ConfirmBid">Confirm Bid</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
 
-      <div class="modal-body">
-        ...
+      <div class="modal-body py-0">
+        <div class="container-fluid mb-3">
+          <div class="row bg-gray py-3">
+            <div class="col-auto pr-0">
+              <img src="images/product-chair-68.png" class="w-100">
+            </div>
+            <div class="col">
+              <p class="my-0">Keegan fabric set of 2 orange dining chair</p>
+              <small class="mb-3">Lot #150809</small>
+              <div class="col-12 p-0">
+                <small class="text-medium text-muted">Overstock</small>
+                <small class="text-medium text-muted px-0 px-md-2">|</small>
+                <small class="text-medium text-muted">Sealed Box</small>
+                <small class="text-medium text-muted px-0 px-md-2">|</small>
+                <small class="text-medium text-muted">Carbon Grey</small>
+              </div>
+            </div>
+          </div>          
+        </div>
+
+
+        <table class="table">
+          <tbody>
+            <tr>
+              <td class="no-border">Your Bid</td>
+              <td class="text-medium no-border">$130.00</td>
+            </tr>
+            <tr>
+              <td class="no-border">15% Buyer’s Premium</td>
+              <td class="text-medium no-border">$19.50</td>
+            </tr>
+            <tr class="fw-bold">
+              <td>Maximum Total*</td>
+              <td>$149.50</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <small class="text-muted">
+          <p>
+            *We will automatically place the lowest bid possible up to your max bid amount.
+          </p>
+          <p>
+            Extended Bidding: If a bid is placed in the last 4 minutes of an item's auction, we extend that item for another 4 minutes.
+          </p>
+          <p>
+            ALL SALES ARE FINAL and items are sold AS IS, WHERE IS
+          </p>
+        </small>
+        
+
       </div>
       
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
 </div>
@@ -171,4 +461,4 @@
       </div>
 
   </div>
-</a><script src=".././js/index.bundle.js?13962020d640ff721453"></script>
+</a><script src=".././js/index.bundle.js?0f6167e8ddd1c27c704e"></script>

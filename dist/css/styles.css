@@ -9708,6 +9708,16 @@ h6, h5, h4, h3, h2, h1 {
 .border-radius-4 {
   border-radius: 4px; }
 
+.modal-content {
+  border: none; }
+  .modal-content .modal-header {
+    border-bottom: none;
+    border-top: 8px solid #ED412C; }
+  .modal-content .modal-footer {
+    border-top: none; }
+  .modal-content .no-border {
+    border: none; }
+
 .btn {
   padding: 5px 32px;
   border-radius: 4px;
@@ -9751,6 +9761,9 @@ h6, h5, h4, h3, h2, h1 {
   content: "";
   border-top: 1px solid white;
   position: absolute; }
+
+.bg-gray {
+  background-color: #F7F7F7; }
 
 @media (max-width: 767.98px) {
   .responsive-img {

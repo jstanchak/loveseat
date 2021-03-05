@@ -156,6 +156,22 @@ h6, h5, h4, h3, h2, h1 {
     border-radius: 4px;
 }
 
+// MODALS
+.modal-content{
+    border: none;
+    .modal-header{
+        border-bottom: none;
+        border-top: 8px solid #ED412C;
+    }
+    .modal-footer{
+        border-top: none;
+    }
+    .no-border{
+        border: none;
+    }
+}
+
+
 // BUTTONS
 .btn {
     padding: 5px 32px;
@@ -206,6 +222,8 @@ h6, h5, h4, h3, h2, h1 {
 .breadcrumb{
     background: none;
 }
+
+
 // OTHERS
 
 .custom-divider::after {
@@ -213,17 +231,11 @@ h6, h5, h4, h3, h2, h1 {
     border-top: 1px solid white;
     position: absolute;
 }
-// .nav-menu{
-//     ul{
-//         display: flex;
-//         .nav-item{
-//             display: flex;
-//             .nav-link{
-//                 display: inline-block;
-//             }
-//         }
-//     }
-// }
+.bg-gray{
+    background-color: #F7F7F7;
+}
+
+
 
 // MEDIA QUERIES
 
