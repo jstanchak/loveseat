@@ -196,6 +196,61 @@ h6, h5, h4, h3, h2, h1 {
 
     }
 }
+//radio button
+
+input[type='radio']:after {
+    width: 9px;
+    height: 9px;
+    border-radius: 15px;
+    top: -7px;
+    left: 2px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='radio']:checked:after {
+    width: 9px;
+    height: 9px;
+    border-radius: 15px;
+    top: -7px;
+    left: 2px;
+    position: relative;
+    background-color: #ED412C;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    // border: 2px solid #ED412C;
+    // padding: 2px;
+}
+input[type='checkbox']:after {
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;
+    top: -5px;
+    left: 0px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='checkbox']:checked:after {
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;
+    top: -5px;
+    left: 0px;
+    position: relative;
+    background-color: #ED412C;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    // border-color: #ED412C;
+    padding: 0;
+}
+
 // Pagination
 .page-link{
     background:none;
@@ -203,10 +258,17 @@ h6, h5, h4, h3, h2, h1 {
     color: black;
 }
 .page-link:hover{
-    background: #FFEBE9;
+    background: #EDEDED;
+    border: none;
+    color: black;
+    border-radius: 2px;
+}
+.page-item.active .page-link{
+    background-color: #FFEBE9;
     border: none;
     color: #ED412C;
     border-radius: 2px;
+    
 }
 
 // FOOTER
