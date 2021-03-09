@@ -14,7 +14,7 @@
 <meta name="theme-color" content="#424242">
 
 
-<link href="./css/styles.css?1a3e859e33a57be8dbf0" rel="stylesheet"></head>
+<link href="./css/styles.css?69ee8ea8fc73b9cdb3ff" rel="stylesheet"></head>
 <body class="bg-light">
 
   <!--[if IE]>
@@ -33,7 +33,7 @@
 <header class="bg-red">
    <div class="container">
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0 pb-0">
          <div class="container-fluid d-block px-0">
 
             <div class="row d-flex align-items-center justify-content-between">
@@ -74,20 +74,20 @@
 
             </div>
             
-            <hr class="custom-divider"/>
+            <hr class="custom-divider mt-2 mb-0"/>
             
             <!-- secundary nav -->
             <div class="row d-flex align-items-center">
                <div class="col-sm-12 col-lg-3 col-md text-white">
                    <div class="dropdown">
-                       <button class="row btn btn-transparent text-white dropdown-toggle px-3 align-items-center" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           <img src="images/map-pin.svg" class="align-middle align-self-center">
-                           San Diego
+                       <button class="row btn btn-transparent text-white dropdown-toggle px-3 align-items-center d-flex" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <img src="images/map-pin.svg" class="mr-1">
+                           <p class="px-1 m-0">San Diego</p>
                        </button>
                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                         <li><a class="dropdown-item" href="#">Action</a></li>
-                         <li><a class="dropdown-item" href="#">Another action</a></li>
-                         <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           <li><a class="dropdown-item active" href="#">San Diego</a></li>
+                           <li><a class="dropdown-item" href="#">Los Angeles</a></li>
+                           <li><a class="dropdown-item" href="#">Orange County</a></li>
                        </ul>
                      </div>
 
@@ -96,13 +96,13 @@
                  <div class="collapse navbar-collapse nav-menu col col-lg-9 px-md-5" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                        <li class="nav-item text-center">
-                          <a class="nav-link text-white pl-0" href="#">Current auction</a>
+                          <a class="nav-link text-white pl-0 pr-3" href="#">Current auction</a>
                        </li>
                        <li class="nav-item text-center">
-                          <a class="nav-link text-white" href="#">How It Works</a>
+                          <a class="nav-link text-white pr-3" href="#">How It Works</a>
                        </li>
                        <li class="nav-item text-center">
-                          <a class="nav-link text-white" href="#">Newsletter</a>
+                          <a class="nav-link text-white pr-3" href="#">Newsletter</a>
                        </li>
                        <li class="nav-item text-center">
                           <a class="nav-link text-white" href="#">Sell</a>
@@ -149,11 +149,13 @@
 
         <div class="row hide-tablet-mobile" >
             <div class="col-9 ">
-                <div class="d-inline-block me-auto mr-3">
-                <img src="images/map-marker.svg">
-                8535 Production Ave, San Diego, CA 92121
+                <div class="d-flex me-auto mr-3">
+                    <img src="images/map-marker.svg" class="mr-2">
+                    8535 Production Ave, San Diego, CA 92121
+                    <a href="#" class="link-primary ml-3 text-danger" type="button" data-toggle="modal" data-target="#AuctionTerms">Auction terms</a>
+                    <a href="#" class="link-primary ml-3 text-danger" type="button" data-toggle="modal" data-target="#BidIncrements">Bid Increments</a>
+
                 </div>
-                <a href="#" class="link-primary mr-3 text-danger" type="button" data-toggle="modal" data-target="#AuctionTerms">Auction terms</a>
                 <div class="modal fade" id="AuctionTerms" tabindex="-1" role="dialog" aria-labelledby="AuctionTerms" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable" role="document">
   <div class="modal-content">
@@ -316,7 +318,6 @@
   </div>
 </div>
                 </div>
-                <a href="#" class="link-primary mr-auto text-danger" type="button" data-toggle="modal" data-target="#BidIncrements">Bid Increments</a>
                 <div class="modal fade" id="BidIncrements" tabindex="-1" role="dialog" aria-labelledby="BidIncrements" aria-hidden="true">
                     <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -486,14 +487,14 @@
       <div class="filters-group">
         <h5>View</h5>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-          <label class="form-check-label" for="flexRadioDefault2">
+          <input class="form-check-input" type="radio" name="radio" id="radio-live-items" checked>
+          <label class="form-check-label" for="radio-live-items">
             Live Items
           </label>
         </div>
         <div class="form-check mb-3">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-          <label class="form-check-label" for="flexRadioDefault1">
+          <input class="form-check-input" type="radio" name="radio" id="radio-ended-items">
+          <label class="form-check-label" for="radio-ended-items">
             Ended Items
           </label>
         </div>
@@ -647,14 +648,14 @@
       <div class="filters-group">
         <h5>View</h5>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-          <label class="form-check-label" for="flexRadioDefault2">
+          <input class="form-check-input" type="radio" name="radio" id="radio-live-items" checked>
+          <label class="form-check-label" for="radio-live-items">
             Live Items
           </label>
         </div>
         <div class="form-check mb-3">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-          <label class="form-check-label" for="flexRadioDefault1">
+          <input class="form-check-input" type="radio" name="radio" id="radio-ended-items">
+          <label class="form-check-label" for="radio-ended-items">
             Ended Items
           </label>
         </div>
@@ -809,7 +810,7 @@
             <div class="row">
 
               
-              <a href="./product-page.html" class="text-dark">
+              
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -817,12 +818,13 @@
       <div class="card">
         <!-- TOP -->
         <div class="card-image position-relative">
-          <img src="images/product.png" class="card-img-top">
-
+          <a href="./product-page.html" class="text-dark">
+            <img src="images/product.png" class="card-img-top">
+          </a>
           <!-- OVERLAYS -->
-          <div class="card-img-overlay mx-3">
+          
 
-            <div class="row align-items-center">
+            <div class="row align-items-center custom-overlay-position">
               <span class="badge mr-2">
                 <img src="images/color.svg">
                 Orange
@@ -833,13 +835,15 @@
               </span>
               <img src="images/Favorite.svg" class="ml-auto">
             </div>
+        
 
-            <div class="row position-absolute custom-badge">
+          
+            <div class="row position-absolute custom-badge mx-3">
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
             </div>
-          </div>
+          
           <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
             <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -893,15 +897,15 @@
   </div>
 </div>
           </div>
-        </div>
+      </div>
 
         <!-- BODY -->
         <div class="card-body">
-
+          <a href="./product-page.html" class="text-dark text-decoration-none">
           <p class="card-title mb-1">
             Keegan fabric set of 2 orange dining chair
           </p>
-
+          </a>
           <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="images/open-box.svg">
             <p class="underline d-inline-block mb-1">
@@ -1231,9 +1235,9 @@
               <td class="no-border">15% Buyer’s Premium</td>
               <td class="text-medium no-border">$19.50</td>
             </tr>
-            <tr class="fw-bold">
-              <td>Maximum Total*</td>
-              <td>$149.50</td>
+            <tr class="text-medium">
+              <td><b>Maximum Total*</b></td>
+              <td><b>$149.50</b></td>
             </tr>
           </tbody>
         </table>
@@ -1254,7 +1258,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Cancel</button>
         <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
@@ -1272,8 +1276,8 @@
       </div>
 
   </div>
-</a>
-              <a href="./product-page.html" class="text-dark">
+
+              
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -1281,12 +1285,13 @@
       <div class="card">
         <!-- TOP -->
         <div class="card-image position-relative">
-          <img src="images/product.png" class="card-img-top">
-
+          <a href="./product-page.html" class="text-dark">
+            <img src="images/product.png" class="card-img-top">
+          </a>
           <!-- OVERLAYS -->
-          <div class="card-img-overlay mx-3">
+          
 
-            <div class="row align-items-center">
+            <div class="row align-items-center custom-overlay-position">
               <span class="badge mr-2">
                 <img src="images/color.svg">
                 Orange
@@ -1297,13 +1302,15 @@
               </span>
               <img src="images/Favorite.svg" class="ml-auto">
             </div>
+        
 
-            <div class="row position-absolute custom-badge">
+          
+            <div class="row position-absolute custom-badge mx-3">
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
             </div>
-          </div>
+          
           <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
             <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -1357,15 +1364,15 @@
   </div>
 </div>
           </div>
-        </div>
+      </div>
 
         <!-- BODY -->
         <div class="card-body">
-
+          <a href="./product-page.html" class="text-dark text-decoration-none">
           <p class="card-title mb-1">
             Keegan fabric set of 2 orange dining chair
           </p>
-
+          </a>
           <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="images/open-box.svg">
             <p class="underline d-inline-block mb-1">
@@ -1695,9 +1702,9 @@
               <td class="no-border">15% Buyer’s Premium</td>
               <td class="text-medium no-border">$19.50</td>
             </tr>
-            <tr class="fw-bold">
-              <td>Maximum Total*</td>
-              <td>$149.50</td>
+            <tr class="text-medium">
+              <td><b>Maximum Total*</b></td>
+              <td><b>$149.50</b></td>
             </tr>
           </tbody>
         </table>
@@ -1718,7 +1725,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Cancel</button>
         <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
@@ -1736,8 +1743,8 @@
       </div>
 
   </div>
-</a>
-              <a href="./product-page.html" class="text-dark">
+
+              
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -1745,12 +1752,13 @@
       <div class="card">
         <!-- TOP -->
         <div class="card-image position-relative">
-          <img src="images/product.png" class="card-img-top">
-
+          <a href="./product-page.html" class="text-dark">
+            <img src="images/product.png" class="card-img-top">
+          </a>
           <!-- OVERLAYS -->
-          <div class="card-img-overlay mx-3">
+          
 
-            <div class="row align-items-center">
+            <div class="row align-items-center custom-overlay-position">
               <span class="badge mr-2">
                 <img src="images/color.svg">
                 Orange
@@ -1761,13 +1769,15 @@
               </span>
               <img src="images/Favorite.svg" class="ml-auto">
             </div>
+        
 
-            <div class="row position-absolute custom-badge">
+          
+            <div class="row position-absolute custom-badge mx-3">
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
             </div>
-          </div>
+          
           <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
             <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -1821,15 +1831,15 @@
   </div>
 </div>
           </div>
-        </div>
+      </div>
 
         <!-- BODY -->
         <div class="card-body">
-
+          <a href="./product-page.html" class="text-dark text-decoration-none">
           <p class="card-title mb-1">
             Keegan fabric set of 2 orange dining chair
           </p>
-
+          </a>
           <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="images/open-box.svg">
             <p class="underline d-inline-block mb-1">
@@ -2159,9 +2169,9 @@
               <td class="no-border">15% Buyer’s Premium</td>
               <td class="text-medium no-border">$19.50</td>
             </tr>
-            <tr class="fw-bold">
-              <td>Maximum Total*</td>
-              <td>$149.50</td>
+            <tr class="text-medium">
+              <td><b>Maximum Total*</b></td>
+              <td><b>$149.50</b></td>
             </tr>
           </tbody>
         </table>
@@ -2182,7 +2192,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Cancel</button>
         <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
@@ -2200,8 +2210,8 @@
       </div>
 
   </div>
-</a>
-              <a href="./product-page.html" class="text-dark">
+
+              
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -2209,12 +2219,13 @@
       <div class="card">
         <!-- TOP -->
         <div class="card-image position-relative">
-          <img src="images/product.png" class="card-img-top">
-
+          <a href="./product-page.html" class="text-dark">
+            <img src="images/product.png" class="card-img-top">
+          </a>
           <!-- OVERLAYS -->
-          <div class="card-img-overlay mx-3">
+          
 
-            <div class="row align-items-center">
+            <div class="row align-items-center custom-overlay-position">
               <span class="badge mr-2">
                 <img src="images/color.svg">
                 Orange
@@ -2225,13 +2236,15 @@
               </span>
               <img src="images/Favorite.svg" class="ml-auto">
             </div>
+        
 
-            <div class="row position-absolute custom-badge">
+          
+            <div class="row position-absolute custom-badge mx-3">
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
             </div>
-          </div>
+          
           <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
             <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -2285,15 +2298,15 @@
   </div>
 </div>
           </div>
-        </div>
+      </div>
 
         <!-- BODY -->
         <div class="card-body">
-
+          <a href="./product-page.html" class="text-dark text-decoration-none">
           <p class="card-title mb-1">
             Keegan fabric set of 2 orange dining chair
           </p>
-
+          </a>
           <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="images/open-box.svg">
             <p class="underline d-inline-block mb-1">
@@ -2623,9 +2636,9 @@
               <td class="no-border">15% Buyer’s Premium</td>
               <td class="text-medium no-border">$19.50</td>
             </tr>
-            <tr class="fw-bold">
-              <td>Maximum Total*</td>
-              <td>$149.50</td>
+            <tr class="text-medium">
+              <td><b>Maximum Total*</b></td>
+              <td><b>$149.50</b></td>
             </tr>
           </tbody>
         </table>
@@ -2646,7 +2659,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Cancel</button>
         <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
@@ -2664,8 +2677,8 @@
       </div>
 
   </div>
-</a>
-              <a href="./product-page.html" class="text-dark">
+
+              
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -2673,12 +2686,13 @@
       <div class="card">
         <!-- TOP -->
         <div class="card-image position-relative">
-          <img src="images/product.png" class="card-img-top">
-
+          <a href="./product-page.html" class="text-dark">
+            <img src="images/product.png" class="card-img-top">
+          </a>
           <!-- OVERLAYS -->
-          <div class="card-img-overlay mx-3">
+          
 
-            <div class="row align-items-center">
+            <div class="row align-items-center custom-overlay-position">
               <span class="badge mr-2">
                 <img src="images/color.svg">
                 Orange
@@ -2689,13 +2703,15 @@
               </span>
               <img src="images/Favorite.svg" class="ml-auto">
             </div>
+        
 
-            <div class="row position-absolute custom-badge">
+          
+            <div class="row position-absolute custom-badge mx-3">
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
             </div>
-          </div>
+          
           <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
             <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -2749,15 +2765,15 @@
   </div>
 </div>
           </div>
-        </div>
+      </div>
 
         <!-- BODY -->
         <div class="card-body">
-
+          <a href="./product-page.html" class="text-dark text-decoration-none">
           <p class="card-title mb-1">
             Keegan fabric set of 2 orange dining chair
           </p>
-
+          </a>
           <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="images/open-box.svg">
             <p class="underline d-inline-block mb-1">
@@ -3087,9 +3103,9 @@
               <td class="no-border">15% Buyer’s Premium</td>
               <td class="text-medium no-border">$19.50</td>
             </tr>
-            <tr class="fw-bold">
-              <td>Maximum Total*</td>
-              <td>$149.50</td>
+            <tr class="text-medium">
+              <td><b>Maximum Total*</b></td>
+              <td><b>$149.50</b></td>
             </tr>
           </tbody>
         </table>
@@ -3110,7 +3126,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Cancel</button>
         <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
@@ -3128,8 +3144,8 @@
       </div>
 
   </div>
-</a>
-              <a href="./product-page.html" class="text-dark">
+
+              
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -3137,12 +3153,13 @@
       <div class="card">
         <!-- TOP -->
         <div class="card-image position-relative">
-          <img src="images/product.png" class="card-img-top">
-
+          <a href="./product-page.html" class="text-dark">
+            <img src="images/product.png" class="card-img-top">
+          </a>
           <!-- OVERLAYS -->
-          <div class="card-img-overlay mx-3">
+          
 
-            <div class="row align-items-center">
+            <div class="row align-items-center custom-overlay-position">
               <span class="badge mr-2">
                 <img src="images/color.svg">
                 Orange
@@ -3153,13 +3170,15 @@
               </span>
               <img src="images/Favorite.svg" class="ml-auto">
             </div>
+        
 
-            <div class="row position-absolute custom-badge">
+          
+            <div class="row position-absolute custom-badge mx-3">
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
             </div>
-          </div>
+          
           <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
             <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -3213,15 +3232,15 @@
   </div>
 </div>
           </div>
-        </div>
+      </div>
 
         <!-- BODY -->
         <div class="card-body">
-
+          <a href="./product-page.html" class="text-dark text-decoration-none">
           <p class="card-title mb-1">
             Keegan fabric set of 2 orange dining chair
           </p>
-
+          </a>
           <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="images/open-box.svg">
             <p class="underline d-inline-block mb-1">
@@ -3551,9 +3570,9 @@
               <td class="no-border">15% Buyer’s Premium</td>
               <td class="text-medium no-border">$19.50</td>
             </tr>
-            <tr class="fw-bold">
-              <td>Maximum Total*</td>
-              <td>$149.50</td>
+            <tr class="text-medium">
+              <td><b>Maximum Total*</b></td>
+              <td><b>$149.50</b></td>
             </tr>
           </tbody>
         </table>
@@ -3574,7 +3593,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Cancel</button>
         <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
@@ -3592,8 +3611,8 @@
       </div>
 
   </div>
-</a>
-              <a href="./product-page.html" class="text-dark">
+
+              
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -3601,12 +3620,13 @@
       <div class="card">
         <!-- TOP -->
         <div class="card-image position-relative">
-          <img src="images/product.png" class="card-img-top">
-
+          <a href="./product-page.html" class="text-dark">
+            <img src="images/product.png" class="card-img-top">
+          </a>
           <!-- OVERLAYS -->
-          <div class="card-img-overlay mx-3">
+          
 
-            <div class="row align-items-center">
+            <div class="row align-items-center custom-overlay-position">
               <span class="badge mr-2">
                 <img src="images/color.svg">
                 Orange
@@ -3617,13 +3637,15 @@
               </span>
               <img src="images/Favorite.svg" class="ml-auto">
             </div>
+        
 
-            <div class="row position-absolute custom-badge">
+          
+            <div class="row position-absolute custom-badge mx-3">
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
             </div>
-          </div>
+          
           <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
             <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -3677,15 +3699,15 @@
   </div>
 </div>
           </div>
-        </div>
+      </div>
 
         <!-- BODY -->
         <div class="card-body">
-
+          <a href="./product-page.html" class="text-dark text-decoration-none">
           <p class="card-title mb-1">
             Keegan fabric set of 2 orange dining chair
           </p>
-
+          </a>
           <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="images/open-box.svg">
             <p class="underline d-inline-block mb-1">
@@ -4015,9 +4037,9 @@
               <td class="no-border">15% Buyer’s Premium</td>
               <td class="text-medium no-border">$19.50</td>
             </tr>
-            <tr class="fw-bold">
-              <td>Maximum Total*</td>
-              <td>$149.50</td>
+            <tr class="text-medium">
+              <td><b>Maximum Total*</b></td>
+              <td><b>$149.50</b></td>
             </tr>
           </tbody>
         </table>
@@ -4038,7 +4060,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Cancel</button>
         <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
@@ -4056,8 +4078,8 @@
       </div>
 
   </div>
-</a>
-              <a href="./product-page.html" class="text-dark">
+
+              
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -4065,12 +4087,13 @@
       <div class="card">
         <!-- TOP -->
         <div class="card-image position-relative">
-          <img src="images/product.png" class="card-img-top">
-
+          <a href="./product-page.html" class="text-dark">
+            <img src="images/product.png" class="card-img-top">
+          </a>
           <!-- OVERLAYS -->
-          <div class="card-img-overlay mx-3">
+          
 
-            <div class="row align-items-center">
+            <div class="row align-items-center custom-overlay-position">
               <span class="badge mr-2">
                 <img src="images/color.svg">
                 Orange
@@ -4081,13 +4104,15 @@
               </span>
               <img src="images/Favorite.svg" class="ml-auto">
             </div>
+        
 
-            <div class="row position-absolute custom-badge">
+          
+            <div class="row position-absolute custom-badge mx-3">
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
             </div>
-          </div>
+          
           <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
             <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -4141,15 +4166,15 @@
   </div>
 </div>
           </div>
-        </div>
+      </div>
 
         <!-- BODY -->
         <div class="card-body">
-
+          <a href="./product-page.html" class="text-dark text-decoration-none">
           <p class="card-title mb-1">
             Keegan fabric set of 2 orange dining chair
           </p>
-
+          </a>
           <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="images/open-box.svg">
             <p class="underline d-inline-block mb-1">
@@ -4479,9 +4504,9 @@
               <td class="no-border">15% Buyer’s Premium</td>
               <td class="text-medium no-border">$19.50</td>
             </tr>
-            <tr class="fw-bold">
-              <td>Maximum Total*</td>
-              <td>$149.50</td>
+            <tr class="text-medium">
+              <td><b>Maximum Total*</b></td>
+              <td><b>$149.50</b></td>
             </tr>
           </tbody>
         </table>
@@ -4502,7 +4527,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Cancel</button>
         <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
@@ -4520,8 +4545,8 @@
       </div>
 
   </div>
-</a>
-              <a href="./product-page.html" class="text-dark">
+
+              
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -4529,12 +4554,13 @@
       <div class="card">
         <!-- TOP -->
         <div class="card-image position-relative">
-          <img src="images/product.png" class="card-img-top">
-
+          <a href="./product-page.html" class="text-dark">
+            <img src="images/product.png" class="card-img-top">
+          </a>
           <!-- OVERLAYS -->
-          <div class="card-img-overlay mx-3">
+          
 
-            <div class="row align-items-center">
+            <div class="row align-items-center custom-overlay-position">
               <span class="badge mr-2">
                 <img src="images/color.svg">
                 Orange
@@ -4545,13 +4571,15 @@
               </span>
               <img src="images/Favorite.svg" class="ml-auto">
             </div>
+        
 
-            <div class="row position-absolute custom-badge">
+          
+            <div class="row position-absolute custom-badge mx-3">
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
             </div>
-          </div>
+          
           <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
             <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -4605,15 +4633,15 @@
   </div>
 </div>
           </div>
-        </div>
+      </div>
 
         <!-- BODY -->
         <div class="card-body">
-
+          <a href="./product-page.html" class="text-dark text-decoration-none">
           <p class="card-title mb-1">
             Keegan fabric set of 2 orange dining chair
           </p>
-
+          </a>
           <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="images/open-box.svg">
             <p class="underline d-inline-block mb-1">
@@ -4943,9 +4971,9 @@
               <td class="no-border">15% Buyer’s Premium</td>
               <td class="text-medium no-border">$19.50</td>
             </tr>
-            <tr class="fw-bold">
-              <td>Maximum Total*</td>
-              <td>$149.50</td>
+            <tr class="text-medium">
+              <td><b>Maximum Total*</b></td>
+              <td><b>$149.50</b></td>
             </tr>
           </tbody>
         </table>
@@ -4966,7 +4994,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Cancel</button>
         <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
@@ -4984,8 +5012,8 @@
       </div>
 
   </div>
-</a>
-              <a href="./product-page.html" class="text-dark">
+
+              
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -4993,12 +5021,13 @@
       <div class="card">
         <!-- TOP -->
         <div class="card-image position-relative">
-          <img src="images/product.png" class="card-img-top">
-
+          <a href="./product-page.html" class="text-dark">
+            <img src="images/product.png" class="card-img-top">
+          </a>
           <!-- OVERLAYS -->
-          <div class="card-img-overlay mx-3">
+          
 
-            <div class="row align-items-center">
+            <div class="row align-items-center custom-overlay-position">
               <span class="badge mr-2">
                 <img src="images/color.svg">
                 Orange
@@ -5009,13 +5038,15 @@
               </span>
               <img src="images/Favorite.svg" class="ml-auto">
             </div>
+        
 
-            <div class="row position-absolute custom-badge">
+          
+            <div class="row position-absolute custom-badge mx-3">
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
             </div>
-          </div>
+          
           <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
             <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -5069,15 +5100,15 @@
   </div>
 </div>
           </div>
-        </div>
+      </div>
 
         <!-- BODY -->
         <div class="card-body">
-
+          <a href="./product-page.html" class="text-dark text-decoration-none">
           <p class="card-title mb-1">
             Keegan fabric set of 2 orange dining chair
           </p>
-
+          </a>
           <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="images/open-box.svg">
             <p class="underline d-inline-block mb-1">
@@ -5407,9 +5438,9 @@
               <td class="no-border">15% Buyer’s Premium</td>
               <td class="text-medium no-border">$19.50</td>
             </tr>
-            <tr class="fw-bold">
-              <td>Maximum Total*</td>
-              <td>$149.50</td>
+            <tr class="text-medium">
+              <td><b>Maximum Total*</b></td>
+              <td><b>$149.50</b></td>
             </tr>
           </tbody>
         </table>
@@ -5430,7 +5461,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Cancel</button>
         <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
@@ -5448,8 +5479,8 @@
       </div>
 
   </div>
-</a>
-              <a href="./product-page.html" class="text-dark">
+
+              
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -5457,12 +5488,13 @@
       <div class="card">
         <!-- TOP -->
         <div class="card-image position-relative">
-          <img src="images/product.png" class="card-img-top">
-
+          <a href="./product-page.html" class="text-dark">
+            <img src="images/product.png" class="card-img-top">
+          </a>
           <!-- OVERLAYS -->
-          <div class="card-img-overlay mx-3">
+          
 
-            <div class="row align-items-center">
+            <div class="row align-items-center custom-overlay-position">
               <span class="badge mr-2">
                 <img src="images/color.svg">
                 Orange
@@ -5473,13 +5505,15 @@
               </span>
               <img src="images/Favorite.svg" class="ml-auto">
             </div>
+        
 
-            <div class="row position-absolute custom-badge">
+          
+            <div class="row position-absolute custom-badge mx-3">
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
             </div>
-          </div>
+          
           <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
             <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -5533,15 +5567,15 @@
   </div>
 </div>
           </div>
-        </div>
+      </div>
 
         <!-- BODY -->
         <div class="card-body">
-
+          <a href="./product-page.html" class="text-dark text-decoration-none">
           <p class="card-title mb-1">
             Keegan fabric set of 2 orange dining chair
           </p>
-
+          </a>
           <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="images/open-box.svg">
             <p class="underline d-inline-block mb-1">
@@ -5871,9 +5905,9 @@
               <td class="no-border">15% Buyer’s Premium</td>
               <td class="text-medium no-border">$19.50</td>
             </tr>
-            <tr class="fw-bold">
-              <td>Maximum Total*</td>
-              <td>$149.50</td>
+            <tr class="text-medium">
+              <td><b>Maximum Total*</b></td>
+              <td><b>$149.50</b></td>
             </tr>
           </tbody>
         </table>
@@ -5894,7 +5928,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Cancel</button>
         <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
@@ -5912,8 +5946,8 @@
       </div>
 
   </div>
-</a>
-              <a href="./product-page.html" class="text-dark">
+
+              
 
 
   <div class="col-lg-4 mb-4 col-sm-12 col-md-6">
@@ -5921,12 +5955,13 @@
       <div class="card">
         <!-- TOP -->
         <div class="card-image position-relative">
-          <img src="images/product.png" class="card-img-top">
-
+          <a href="./product-page.html" class="text-dark">
+            <img src="images/product.png" class="card-img-top">
+          </a>
           <!-- OVERLAYS -->
-          <div class="card-img-overlay mx-3">
+          
 
-            <div class="row align-items-center">
+            <div class="row align-items-center custom-overlay-position">
               <span class="badge mr-2">
                 <img src="images/color.svg">
                 Orange
@@ -5937,13 +5972,15 @@
               </span>
               <img src="images/Favorite.svg" class="ml-auto">
             </div>
+        
 
-            <div class="row position-absolute custom-badge">
+          
+            <div class="row position-absolute custom-badge mx-3">
               <a class="badge custom-badge pb-1 px-2" type="button" data-toggle="modal" data-target="#ItemType">
                 Overstock
               </a>
             </div>
-          </div>
+          
           <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemType" aria-hidden="true">
             <div class="modal-dialog" role="document">
   <div class="modal-content">
@@ -5997,15 +6034,15 @@
   </div>
 </div>
           </div>
-        </div>
+      </div>
 
         <!-- BODY -->
         <div class="card-body">
-
+          <a href="./product-page.html" class="text-dark text-decoration-none">
           <p class="card-title mb-1">
             Keegan fabric set of 2 orange dining chair
           </p>
-
+          </a>
           <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
             <img src="images/open-box.svg">
             <p class="underline d-inline-block mb-1">
@@ -6335,9 +6372,9 @@
               <td class="no-border">15% Buyer’s Premium</td>
               <td class="text-medium no-border">$19.50</td>
             </tr>
-            <tr class="fw-bold">
-              <td>Maximum Total*</td>
-              <td>$149.50</td>
+            <tr class="text-medium">
+              <td><b>Maximum Total*</b></td>
+              <td><b>$149.50</b></td>
             </tr>
           </tbody>
         </table>
@@ -6358,7 +6395,7 @@
       </div>
       
       <div class="modal-footer">
-        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Close</button>
+        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-outline-primary">Cancel</button>
         <button type="submit" class="btn btn-primary">Bid</button>
       </div>
     </div>
@@ -6376,14 +6413,14 @@
       </div>
 
   </div>
-</a>
+
              
             </div>
           </div>
           
           <nav aria-label="Page navigation">
             <ul class="pagination justify-content-center align-items-center">
-              <li class="page-item">
+              <li class="page-item  d-none " >
                 <a class="page-link" href="#">
                  <img src="images/chevron-left.svg" class="align-self-center">
                   <span class="hide-mobile">
@@ -6497,5 +6534,5 @@
 
 
 
-<script src="./js/index.bundle.js?1a3e859e33a57be8dbf0"></script></body>
+<script src="./js/index.bundle.js?69ee8ea8fc73b9cdb3ff"></script></body>
 </html>

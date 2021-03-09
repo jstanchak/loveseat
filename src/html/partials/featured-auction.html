@@ -27,15 +27,16 @@
 
         <div class="row hide-tablet-mobile" >
             <div class="col-9 ">
-                <div class="d-inline-block me-auto mr-3">
-                <img src="../../assets/images/icons/map-marker.svg">
-                8535 Production Ave, San Diego, CA 92121
+                <div class="d-flex me-auto mr-3">
+                    <img src="../../assets/images/icons/map-marker.svg" class="mr-2">
+                    8535 Production Ave, San Diego, CA 92121
+                    <a href="#" class="link-primary ml-3 text-danger" type="button" data-toggle="modal" data-target="#AuctionTerms">Auction terms</a>
+                    <a href="#" class="link-primary ml-3 text-danger" type="button" data-toggle="modal" data-target="#BidIncrements">Bid Increments</a>
+
                 </div>
-                <a href="#" class="link-primary mr-3 text-danger" type="button" data-toggle="modal" data-target="#AuctionTerms">Auction terms</a>
                 <div class="modal fade" id="AuctionTerms" tabindex="-1" role="dialog" aria-labelledby="AuctionTerms" aria-hidden="true">
                     ${ require('./modal-auction-terms.html') }
                 </div>
-                <a href="#" class="link-primary mr-auto text-danger" type="button" data-toggle="modal" data-target="#BidIncrements">Bid Increments</a>
                 <div class="modal fade" id="BidIncrements" tabindex="-1" role="dialog" aria-labelledby="BidIncrements" aria-hidden="true">
                     ${ require('./modal-bid-increments.html') }
                 </div>
