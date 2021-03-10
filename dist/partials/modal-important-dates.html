@@ -1,67 +1,131 @@
-<head><link href=".././css/styles.css?69ee8ea8fc73b9cdb3ff" rel="stylesheet"></head><div class="modal-dialog" role="document">
-  <div class="modal-content">
-
-    <div class="modal-header">
-
-      <img src="images/important-dates.svg">
-
-      <h4 class="modal-title px-4 align-self-center" id="ImportantDates">Important Dates</h4>
-
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-
-    </div>
-
-    
-    <div class="modal-body mx-3">
-
-      <div class="row mb-2">
-        <p class="text-muted text-medium mb-1  col-12">
-          BIDDING STARTS
-        </p>
-        <p class="col-12">
-          Mié Ene 20, 2021, 7:00pm PT
-        </p>
-      </div>
-      <div class="row mb-2">
-        <p class="text-muted text-medium mb-1 col-12">
-          PREVIEW
-        </p>
-        <p class="col-12">
-          No in-person Item Inspection for this auction. Please bid with that in mind - normal AS IS, NO REFUNDS rules apply.
-        </p>
-      </div>
-      <div class="row mb-2">
-        <p class="text-muted text-medium mb-1  col-12">
-          BIDDING ENDS
-        </p>
-        <p class="col-12">
-          Mié Ene 27, 2021 beginning at 7:00pm PT. See individual items for exact closing times.
-        </p>
-      </div>
-      <div class="row mb-2">
-        <p class="text-muted text-medium mb-1  col-12">
-          PICKUP
-        </p>
-        <p class="col-12">
-          Pickup is limited to Sat Jan 30, 2021 10am-5pm & Tue Feb 2, 2021 1pm-5pm at <a href="#"><u>Loveseat San Diego warehouse </u></a> 
-        </p>
-      </div>
-      <div class="row mb-2">
-        <p class="text-muted text-medium mb-1  col-12">
-          LATE PICKUP
-        </p>
-        <p class="col-12">
-          Sat Feb 6, 2021 10am-5pm $20 per item fee.
-        </p>
-      </div>
-   
-    
-
-
-    </div>
-
-    
-  </div>
-</div><script src=".././js/index.bundle.js?69ee8ea8fc73b9cdb3ff"></script>
+<head><link href=".././css/styles.css?bde3ca5ea0ac160e3684" rel="stylesheet"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve './partials/modal-lightbox-product.html  ' in '/Users/macbook/Documents/Pengyi/loveseat/src/html':
+  Error: Can't resolve './partials/modal-lightbox-product.html' in '/Users/macbo  ok/Documents/Pengyi/loveseat/src/html'
+  ModuleNotFoundError: Module not found: Error: Can't resolve './partials/modal-  lightbox-product.html' in '/Users/macbook/Documents/Pengyi/loveseat/src/html'
+  
+  - Compilation.js:925 
+    [loveseat]/[webpack]/lib/Compilation.js:925:10
+  
+  - NormalModuleFactory.js:401 
+    [loveseat]/[webpack]/lib/NormalModuleFactory.js:401:22
+  
+  - NormalModuleFactory.js:130 
+    [loveseat]/[webpack]/lib/NormalModuleFactory.js:130:21
+  
+  - NormalModuleFactory.js:224 
+    [loveseat]/[webpack]/lib/NormalModuleFactory.js:224:22
+  
+  - async.js:2830 
+    [loveseat]/[neo-async]/async.js:2830:7
+  
+  - async.js:6877 
+    [loveseat]/[neo-async]/async.js:6877:13
+  
+  - NormalModuleFactory.js:214 
+    [loveseat]/[webpack]/lib/NormalModuleFactory.js:214:25
+  
+  - Resolver.js:213 
+    [loveseat]/[enhanced-resolve]/lib/Resolver.js:213:14
+  
+  - Resolver.js:285 
+    [loveseat]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - UnsafeCachePlugin.js:44 
+    [loveseat]/[enhanced-resolve]/lib/UnsafeCachePlugin.js:44:7
+  
+  - Resolver.js:285 
+    [loveseat]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - Resolver.js:285 
+    [loveseat]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - DescriptionFilePlugin.js:67 
+    [loveseat]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:67:43
+  
+  - Resolver.js:285 
+    [loveseat]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - RootPlugin.js:37 
+    [loveseat]/[enhanced-resolve]/lib/RootPlugin.js:37:38
+  
+  
+  
+  - Resolver.js:285 
+    [loveseat]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - DescriptionFilePlugin.js:67 
+    [loveseat]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:67:43
+  
+  - Resolver.js:285 
+    [loveseat]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - Resolver.js:285 
+    [loveseat]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - DirectoryExistsPlugin.js:27 
+    [loveseat]/[enhanced-resolve]/lib/DirectoryExistsPlugin.js:27:15
+  
+  - CachedInputFileSystem.js:85 
+    [loveseat]/[enhanced-resolve]/lib/CachedInputFileSystem.js:85:15
+  
+  - child-compiler.js:131 
+    [loveseat]/[html-webpack-plugin]/lib/child-compiler.js:131:18
+  
+  - Compiler.js:343 
+    [loveseat]/[webpack]/lib/Compiler.js:343:11
+  
+  - Compiler.js:681 
+    [loveseat]/[webpack]/lib/Compiler.js:681:15
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [loveseat]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:678 
+    [loveseat]/[webpack]/lib/Compiler.js:678:31
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [loveseat]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1423 
+    [loveseat]/[webpack]/lib/Compilation.js:1423:35
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [loveseat]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1414 
+    [loveseat]/[webpack]/lib/Compilation.js:1414:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [loveseat]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1409 
+    [loveseat]/[webpack]/lib/Compilation.js:1409:36
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [loveseat]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1405 
+    [loveseat]/[webpack]/lib/Compilation.js:1405:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [loveseat]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1342 Compilation.seal
+    [loveseat]/[webpack]/lib/Compilation.js:1342:27
+  
+</pre><script src=".././js/index.bundle.js?bde3ca5ea0ac160e3684"></script>
