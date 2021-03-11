@@ -69,7 +69,7 @@
 
                     <!------------ MODAL ----------------->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
+                        <div class="modal-dialog lightbox-modal" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -186,9 +186,20 @@
                             ${ require('./partials/modal-confirm-bid.html') }
                         </div>
                 
-                        <div class="row align-items-center mt-2">
+                        <div class="row align-items-center mt-2" data-toggle="modal" data-target="#BidIncrements">
                             <img src="../assets/images/icons/warning.svg" class="col-auto pr-0 d-inline-block ">
-                            <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+                            <small class="text-muted d-inline-block col fs-6 mb-0 pl-1">Enter max bid of  $97 or more.</small>
+                        </div>
+                        <div class="modal fade" id="BidIncrements" tabindex="-1" role="dialog" aria-labelledby="BidIncrements" aria-hidden="true">
+                            ${ require('./partials/modal-bid-increments.html') }
+                        </div>
+                        <!---  Ended Item (display:none)-->
+                        <div class="row ended-product py-2 mt-2 mx-0 d-none">
+                            <img src="../assets/images/icons/notification-brown.svg" class="col-auto">
+                            <div class="col pl-0">
+                                <p class="mb-0">Missed this item? Get the next one.</p>
+                                <a class="">CREATE AN ALERT</a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -344,7 +344,22 @@ input[type='checkbox']:checked:after {
     background-color: #F7F7F7;
 }
 
+.ended-product{
+    background-color: #FFF9EE;
+    border-radius: 4px;
+    color: #B47803;
+    a{
+        color: #B47803; 
+    }
+}
 
+.lightbox-modal{
+    max-width: 500px;
+    .modal-header{
+        border-top: none !important;
+    }
+
+}
 
 // MEDIA QUERIES
 
@@ -387,7 +402,9 @@ input[type='checkbox']:checked:after {
             border: none;
         }
     }
-    
+    .lightbox-modal{
+        max-width: 70%;
+    }
 }
 @media (min-width: 992px) {
     .hide-desktop{
@@ -404,6 +421,9 @@ input[type='checkbox']:checked:after {
     .no-top-border-lg{
         border-top: 0px solid transparent !important;
     }
+    .lightbox-modal{
+        max-width: 60%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -411,5 +431,8 @@ input[type='checkbox']:checked:after {
         li{
             margin-bottom: 1.5rem;
         }
+    }
+    .lightbox-modal{
+        max-width: 50%;
     }
 }

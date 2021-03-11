@@ -44,13 +44,13 @@
             Keegan fabric set of 2 orange dining chair
           </p>
           </a>
-          <a href="#" class="text-secondary " type="button" data-toggle="modal" data-target="#ItemState">
+          <a href="#" class="d-block text-secondary" type="button" data-toggle="modal" data-target="#State">
             <img src="../../assets/images/icons/item-conditions/open-box.svg">
             <p class="underline d-inline-block mb-1">
             Open Box
             </p>
           </a>
-          <div class="modal fade" id="ItemType" tabindex="-1" role="dialog" aria-labelledby="ItemState" aria-hidden="true">
+          <div class="modal fade" id="State" tabindex="-1" role="dialog" aria-labelledby="ItemState" aria-hidden="true">
             ${ require('./modal-item-state.html') }
           </div>
 
@@ -88,11 +88,21 @@
             </div>
           </form>
 
-          <div class="row align-items-center mt-2">
+          <div class="row align-items-center mt-2 d-flex" data-toggle="modal" data-target="#BidIncrements">
             <img src="../../assets/images/icons/warning.svg" class="col-auto pr-0 d-inline-block ">
-            <p class="text-muted d-inline-block col fs-6 mb-0 pl-1"><small>Enter max bid of  $97 or more.</small></p>
+            <small class="text-muted d-inline-block col fs-6 mb-0 pl-1">Enter max bid of  $97 or more.</small>
+          </div>
+          <div class="modal fade" id="BidIncrements" tabindex="-1" role="dialog" aria-labelledby="BidIncrements" aria-hidden="true">
+            ${ require('./modal-bid-increments.html') }
           </div>
 
+          <!---  Ended Item (display:none)-->
+          <div class="row ended-product py-2 mt-2 mx-0 d-none">
+            <div class="col">
+                <p class="mb-0">Missed this item? Get the next one.</p>
+                <a class="">CREATE AN ALERT</a>
+            </div>
+          </div>
         </div>
 
       </div>
