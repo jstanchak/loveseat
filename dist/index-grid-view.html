@@ -12,9 +12,19 @@
 <link rel="apple-touch-icon" href="favicon.ico">
 
 <meta name="theme-color" content="#424242">
+ <script>
+   let togglee = false;
+  function toggleClass() {
+    var element = document.getElementById("truncateText");
+    var btn = document.getElementById("toggleText");
+    element.classList.toggle("text-truncate")
+    btn.innerHTML = togglee == true ? "More" : "Hidden"
+    togglee = !togglee;
+  }
+ </script>
 
 
-<link href="./css/styles.css?c5b241f10e463fc6d322" rel="stylesheet"></head>
+<link href="./css/styles.css?4ee507fb0e2948102fd6" rel="stylesheet"></head>
 <body class="bg-light">
 
   <!--[if IE]>
@@ -130,9 +140,12 @@
                             <img src="images/chevron-down-red.svg" class="d-flex">
                         </a>
                     </div>
-                    <p class="d-none d-lg-block">
-                        Solid Sideboards, Lucite Legged Chesterfield Sofa, Leather Pushback Recliner... 
-                    </p>
+                    <div id="textContainer" class="d-none d-lg-flex">
+                        <p id="truncateText" class="d-none d-lg-block text-truncate">
+                            Solid Sideboards, Lucite Legged Chesterfield Sofa, Leather Pushback Recliner, Top-Of-Line Vacuums, Velvet Side Chairs, Carson Carrington End Table,Leather Saddle Desk Chair, Vintage Wooden High Chair, Vera Wang Linens, Foam Mattresss Toppers, Hotel Colletction Bedding Sets, Outdoor Lighting, Luggage, Decorating Kits, Ice Cream Maeker ans more!
+                        </p>
+                        <span onclick="toggleClass()" id="toggleText" class="link-primary ml-3 text-danger">More</span>
+                    </div>
                 </div>
 
                 <div class="col-lg-2 col-6 order-lg-2 order-3 text-right align-self-lg-start align-self-md-center ">
@@ -152,7 +165,7 @@
                         Solid Sideboards, Lucite Legged Chesterfield Sofa, Leather Pushback Recliner, Top-Of-Line Vacuums, Velvet Side Chairs, Carson Carrington End Table,Leather Saddle Desk Chair, Vintage Wooden High Chair, Vera Wang Linens, Foam Mattresss Toppers, Hotel Colletction Bedding Sets, Outdoor Lighting, Luggage, Decorating Kits, Ice Cream Maeker ans more!
                     </p>
                 </div>
-        </div> 
+        </div>
 
         <div class="row hide-tablet-mobile" >
             <div class="col-9 ">
@@ -389,7 +402,7 @@
 </div>
                 </div>
             </div>
-            
+
             <div class="col-3 text-right">
                 <a href="#" class="link-primary text-danger" type="button" data-toggle="modal" data-target="#ImportantDates">Important dates</a>
             </div>
@@ -464,10 +477,9 @@
             </div>
 
         </div>
-            
+
     </div>
 
-    
 </div>
 
 
@@ -1305,5 +1317,5 @@
 
 
 
-<script src="./js/index.bundle.js?c5b241f10e463fc6d322"></script></body>
+<script src="./js/index.bundle.js?4ee507fb0e2948102fd6"></script></body>
 </html>
