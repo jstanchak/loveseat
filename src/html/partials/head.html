@@ -5,7 +5,7 @@
 
 <meta name="theme-color" content="#424242">
  <script>
-   let togglee = false;
+  let togglee = false;
   function toggleClass() {
     var element = document.getElementById("truncateText");
     var btn = document.getElementById("toggleText");
@@ -13,4 +13,15 @@
     btn.innerHTML = togglee == true ? "More" : "Hidden"
     togglee = !togglee;
   }
+
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+
  </script>

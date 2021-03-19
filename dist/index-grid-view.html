@@ -13,7 +13,7 @@
 
 <meta name="theme-color" content="#424242">
  <script>
-   let togglee = false;
+  let togglee = false;
   function toggleClass() {
     var element = document.getElementById("truncateText");
     var btn = document.getElementById("toggleText");
@@ -21,10 +21,21 @@
     btn.innerHTML = togglee == true ? "More" : "Hidden"
     togglee = !togglee;
   }
+
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+
  </script>
 
 
-<link href="./css/styles.css?c5eab42562f142022e80" rel="stylesheet"></head>
+<link href="./css/styles.css?0982eac1270242a79e92" rel="stylesheet"></head>
 <body class="bg-light">
 
   <!--[if IE]>
@@ -53,7 +64,7 @@
                         <span class="navbar-toggler-icon"></span>
                      </button>
 
-                     <img src="images/logo.svg" width="200" class="d-inline-block align-self-center rounded" alt="Loveseat Logo">
+                     <img src="images/logo.svg" class="d-inline-block align-self-center rounded logo img-fluid" alt="Loveseat Logo">
                </div>
 
 
@@ -1318,5 +1329,5 @@
 
 
 
-<script src="./js/index.bundle.js?c5eab42562f142022e80"></script></body>
+<script src="./js/index.bundle.js?0982eac1270242a79e92"></script></body>
 </html>

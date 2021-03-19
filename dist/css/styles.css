@@ -9595,6 +9595,16 @@ body {
   color: #fafafa;
   background-color: #424242; }
 
+.logo {
+  min-width: 150px;
+  max-width: 200px; }
+
+@media (max-width: 900px) {
+  .logo {
+    min-width: 90px;
+    max-width: 120px;
+    margin-bottom: 10px; } }
+
 .bg-red {
   background-color: #ED412C; }
   .bg-red .a {
