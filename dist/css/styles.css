@@ -7881,7 +7881,6 @@ button.bg-dark:focus {
   position: fixed !important; }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -7898,9 +7897,8 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030; }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -9594,6 +9592,29 @@ body {
 .footer {
   color: #fafafa;
   background-color: #424242; }
+
+.img-feature {
+  width: 73px;
+  height: 73px;
+  border-radius: 4px; }
+
+.all-feature {
+  filter: opacity(0.3); }
+
+.price-feature {
+  position: absolute;
+  top: 50%;
+  transform: translateX(35%) translateY(-50%); }
+
+.color-black-text {
+  color: #000; }
+
+.border-feature {
+  border: 2px solid #E5E5E5;
+  border-radius: 4px; }
+
+.feature-div {
+  position: relative; }
 
 .logo {
   min-width: 150px;
