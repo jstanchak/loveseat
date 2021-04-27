@@ -29,3 +29,22 @@ color: #000;
 .feature-div {
     position: relative;
 }
+
+.bid-state {
+    width: 100%;
+    text-align: center;
+    background: #B0F2C2;
+    opacity: .6;
+    position: absolute; 
+    height: 24px;
+    img {
+        display: inline-block;
+    }
+    h5 {
+        display: inline-block;
+        margin-left: 5px;
+        font-family: 'Inter';
+        font-weight: 500;
+    }
+    
+}

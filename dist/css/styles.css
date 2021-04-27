@@ -9616,6 +9616,21 @@ body {
 .feature-div {
   position: relative; }
 
+.bid-state {
+  width: 100%;
+  text-align: center;
+  background: #B0F2C2;
+  opacity: .6;
+  position: absolute;
+  height: 24px; }
+  .bid-state img {
+    display: inline-block; }
+  .bid-state h5 {
+    display: inline-block;
+    margin-left: 5px;
+    font-family: 'Inter';
+    font-weight: 500; }
+
 .logo {
   min-width: 150px;
   max-width: 200px; }
@@ -9746,7 +9761,7 @@ h6, h5, h4, h3, h2, h1 {
   position: absolute;
   margin: 1.125rem;
   left: 0;
-  top: 0;
+  top: 15px;
   width: 88%; }
 
 .modal-content {
