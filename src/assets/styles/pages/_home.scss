@@ -30,7 +30,7 @@ color: #000;
     position: relative;
 }
 
-.bid-state {
+.bid-state-winning {
     width: 100%;
     text-align: center;
     background: #B0F2C2;
@@ -39,12 +39,57 @@ color: #000;
     height: 24px;
     img {
         display: inline-block;
+        height: 20px !important;
+        width: 20px !important;
     }
     h5 {
-        display: inline-block;
+        display: inline-block !important;
         margin-left: 5px;
         font-family: 'Inter';
-        font-weight: 500;
+        font-weight: 600;
+        color: #000;
+    }
+    
+}
+.bid-state-winner {
+    width: 100%;
+    text-align: center;
+    background: #FFF59F;
+    opacity: .6;
+    position: absolute; 
+    height: 24px;
+    img {
+        display: inline-block;
+        height: 20px !important;
+        width: 20px !important;
+    }
+    h5 {
+        display: inline-block !important;
+        margin-left: 5px;
+        font-family: 'Inter';
+        font-weight: 600;
+        color: #000;
+    }
+    
+}
+.bid-state-outbid {
+    width: 100%;
+    text-align: center;
+    background: #ED2E44;
+    opacity: .6;
+    position: absolute; 
+    height: 24px;
+    img {
+        display: inline-block;
+        height: 20px !important;
+        width: 20px !important;
+    }
+    h5 {
+        display: inline-block !important;
+        margin-left: 5px;
+        font-family: 'Inter';
+        font-weight: 600;
+        color: #000;
     }
     
 }
