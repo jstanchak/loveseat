@@ -1,0 +1,125 @@
+
+<!-- <div class="form-control d-flex min-vh-100 justify-content-center">
+  <div
+    class="shadow"
+    style="
+      height: 857px;
+      width: 1360px;
+      left: 40px;
+      top: 40px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    "
+  >
+  -->
+  
+
+    <!-- <div style=>
+    <ul
+    class="nav justify-content-center"
+      >
+        <li class="nav-item">
+          <a class="nav-link active" style="font-size: 18px; color: #A1A1A1;" href="#"
+            >Purchases</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" 
+          style="font-size: 18px; color: #A1A1A1; " 
+          href="#">Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" 
+          style="font-size: 18px; color:#141414; font-weight: bold;" 
+          href="#">Alerts</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            style="font-size: 18px; color: #A1A1A1;"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >Settings</a
+          >
+        </li>
+      </ul>
+      <hr style="width: 35%; border: 1px solid lightgray; margin-top: 0" />
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-top: 26px; margin-bottom: 44px;">
+      <a style="font-size: 24px; margin-left: 80px; cursor: pointer;">Saved Searches</a>
+      <button 
+      type="button" 
+      class="btn btn-primary" 
+      style="height: 40px;
+      width: 200px;
+      border-radius: 4px;
+      padding: 12px, 0px;
+      align-self: flex-end;
+      margin-right: 80px;
+      "
+    >Create Alert</button>
+    </div> -->
+
+    
+    <!-- <div
+      style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap"
+    >
+      <div class="card" style="width: 580px; height: 300px"></div>
+      <div class="card" style="width: 580px; height: 300px"></div>
+      <div class="card" style="width: 580px; height: 300px"></div>
+      <div class="card" style="width: 580px; height: 300px"></div>
+    </div> -->
+<!-- 
+  </div>
+</div> -->
+
+<div class="container shadow">
+
+  <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="pills-purchases-tab" data-toggle="pill" href="#pills-purchases" role="tab" aria-controls="pills-purchases" aria-selected="false">Purchases</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="pills-favorites-tab" data-toggle="pill" href="#pills-favorites" role="tab" aria-controls="pills-favorites" aria-selected="false">Favorites</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="pills-alerts-tab" data-toggle="pill" href="#pills-alerts" role="tab" aria-controls="pills-alerts" aria-selected="true">Alerts</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="pills-settings-tab" data-toggle="pill" href="#pills-settings" role="tab" aria-controls="pills-contact" aria-selected="false">Settings</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="pills-purchases" role="tabpanel" aria-labelledby="pills-purchases-tab">...</div>
+
+    <div class="tab-pane d-flex flex-wrap fade" id="pills-favorites" role="tabpanel" aria-labelledby="pills-favorites-tab">             
+      ${ require('./product-card.html') }
+      ${ require('./product-card-winner.html') }
+      ${ require('./product-card-outbid.html') }
+      ${ require('./product-card.html') }
+      ${ require('./product-card-winner.html') }
+      ${ require('./product-card-outbid.html') }
+      ${ require('./product-card.html') }
+      ${ require('./product-card-winner.html') }
+    </div>
+
+    <div class="tab-pane fade" id="pills-alerts" role="tabpanel" aria-labelledby="pills-alerts-tab">
+      <div class="row">
+        <div class="col-5 border rounded-lg py-4">col</div>
+        <div class="col-5 border rounded-lg py-4">col</div>
+        <div class="col-5 border rounded-lg py-4">col</div>
+        <div class="col-5 border rounded-lg py-4">col</div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab">...</div>
+
+  </div>
+
+
+</div>
