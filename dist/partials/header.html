@@ -1,86 +1,132 @@
-<head><link href=".././css/styles.css?7f2303287abe955d27b7" rel="stylesheet"></head>
-<header class="bg-red">
-   <div class="container">
+<head><link href=".././css/styles.css?fab2fbe27db551968ae7" rel="stylesheet"></head><header class="bg-red">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0 pb-0">
+      <div class="container-fluid d-block px-0">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col col-md-auto col-lg-3 pr-0">
+            <button
+              class="navbar-toggler pl-0 d-md-"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="./">
+              <img
+                src="images/logo.svg"
+                class="d-inline-block align-self-center rounded logo img-fluid"
+                alt="Loveseat Logo"
+              />
+            </a>
+          </div>
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0 pb-0">
-         <div class="container-fluid d-block px-0">
+          <div
+            class="
+              col-auto col-md-auto
+              ml-md-auto ml-0
+              text-right
+              order-md-3
+              pl-sm-0
+            "
+          >
+            <a href="#">
+              <img
+                src="images/heart.svg"
+                class="icon-responsive"
+              />
+            </a>
 
-            <div class="row d-flex align-items-center justify-content-between">
-               <div class="col col-md-auto col-lg-3 pr-0">
+            <a href="./notifications.html" class="pl-2">
+              <img
+                src="images/bell.svg"
+                class="icon-responsive"
+              />
+            </a>
 
-                     <button class="navbar-toggler pl-0 d-md-" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                     </button>
+            <a href="./login.html" class="pl-2">
+              <img
+                src="images/user.svg"
+                class="icon-responsive"
+              />
+            </a>
+          </div>
 
-                     <img src="images/logo.svg" class="d-inline-block align-self-center rounded logo img-fluid" alt="Loveseat Logo">
-               </div>
+          <div class="d-md-block col-lg-6 col-md col-sm-12 order-md-2 px-md-5">
+            <form class="d-flex search-bar">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">
+                <img src="images/search.svg" />
+              </button>
+            </form>
+          </div>
+        </div>
 
-               
-               <div class="col-auto col-md-auto ml-md-auto ml-0 text-right order-md-3 pl-sm-0">
-                  <a href="#">
-                     <img src="images/heart.svg" class="icon-responsive">
-                  </a>
+        <hr class="custom-divider mt-2 mb-0" />
 
-                  <a href="./notifications.html" class="pl-2">
-                     <img src="images/bell.svg" class="icon-responsive">
-                  </a>
-
-                  <a href="./login.html" class="pl-2">
-                     <img src="images/user.svg" class="icon-responsive">
-                  </a>
-               </div>
-
-               <div class="d-md-block col-lg-6 col-md col-sm-12 order-md-2 px-md-5">
-                  <form class="d-flex search-bar">
-                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                     <button class="btn" type="submit">
-                        <img src="images/search.svg">
-                     </button>
-                  </form>
-               </div>
-
+        <!-- secundary nav -->
+        <div class="row d-flex align-items-center">
+          <div class="col-sm-12 col-lg-3 col-md text-white">
+            <div class="dropdown">
+              <button
+                class="
+                  row
+                  btn btn-transparent
+                  text-white
+                  dropdown-toggle
+                  px-3
+                  align-items-center
+                  d-flex
+                "
+                type="button"
+                id="dropdownMenu2"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="images/map-pin.svg" class="mr-1" />
+                <p class="px-1 m-0">San Diego</p>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a class="dropdown-item active" href="#">San Diego</a></li>
+                <li><a class="dropdown-item" href="#">Los Angeles</a></li>
+                <li><a class="dropdown-item" href="#">Orange County</a></li>
+              </ul>
             </div>
+          </div>
 
-            <hr class="custom-divider mt-2 mb-0"/>
-
-            <!-- secundary nav -->
-            <div class="row d-flex align-items-center">
-               <div class="col-sm-12 col-lg-3 col-md text-white">
-                   <div class="dropdown">
-                       <button class="row btn btn-transparent text-white dropdown-toggle px-3 align-items-center d-flex" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           <img src="images/map-pin.svg" class="mr-1">
-                           <p class="px-1 m-0">San Diego</p>
-                       </button>
-                       <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                           <li><a class="dropdown-item active" href="#">San Diego</a></li>
-                           <li><a class="dropdown-item" href="#">Los Angeles</a></li>
-                           <li><a class="dropdown-item" href="#">Orange County</a></li>
-                       </ul>
-                     </div>
-
-               </div>
-
-                 <div class="collapse navbar-collapse nav-menu col col-lg-9 px-md-5" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                       <li class="nav-item text-center">
-                          <a class="nav-link text-white pl-0 pr-3" href="#">Current auction</a>
-                       </li>
-                       <li class="nav-item text-center">
-                          <a class="nav-link text-white pr-3" href="#">How It Works</a>
-                       </li>
-                       <li class="nav-item text-center">
-                          <a class="nav-link text-white pr-3" href="#">Newsletter</a>
-                       </li>
-                       <li class="nav-item text-center">
-                          <a class="nav-link text-white" href="#">Sell</a>
-                       </li>
-                    </ul>
-                 </div>
-                 </div>
-
-         </div>
-      </nav>
-
-   </div>
+          <div
+            class="collapse navbar-collapse nav-menu col col-lg-9 px-md-5"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item text-center">
+                <a class="nav-link text-white pl-0 pr-3" href="#"
+                  >Current auction</a
+                >
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link text-white pr-3" href="#">How It Works</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link text-white pr-3" href="#">Newsletter</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link text-white" href="#">Sell</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>
-<script src=".././js/index.bundle.js?7f2303287abe955d27b7"></script>
+<script src=".././js/index.bundle.js?fab2fbe27db551968ae7"></script>
