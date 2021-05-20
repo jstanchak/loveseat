@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
   <div class="shadow mt-5">
     <!-- container-nav -->
     <div class="justify-content-center">
@@ -9,19 +9,19 @@
       >
         <li class="nav-item" role="presentation">
           <a
-            class="nav-link"
+            class="nav-link bg-transparent text-muted"
             id="pills-purchases-tab"
             data-toggle="pill"
             href="#pills-purchases"
             role="tab"
             aria-controls="pills-purchases"
-            aria-selected="true"
+            aria-selected="false"
             >Purchases</a
           >
         </li>
         <li class="nav-item" role="presentation">
           <a
-            class="nav-link"
+            class="nav-link bg-transparent text-muted"
             id="pills-favorites-tab"
             data-toggle="pill"
             href="#pills-favorites"
@@ -33,7 +33,7 @@
         </li>
         <li class="nav-item" role="presentation">
           <a
-            class="nav-link"
+            class="nav-link bg-transparent text-muted"
             id="pills-alerts-tab"
             data-toggle="pill"
             href="#pills-alerts"
@@ -45,7 +45,7 @@
         </li>
         <li class="nav-item" role="presentation">
           <a
-            class="nav-link"
+            class="nav-link bg-transparent text-muted"
             id="pills-settings-tab"
             data-toggle="pill"
             href="#pills-settings"
@@ -61,14 +61,65 @@
 
     <div class="tab-content" id="pills-tabContent">
       <div
-        class="tab-pane fade show active"
+        class="tab-pane fade show active mx-5"
         id="pills-purchases"
         role="tabpanel"
         aria-labelledby="pills-purchases-tab"
-      ></div>
+      >
+    
+      <div class="ml-3" style="margin-top: 2rem;">
+        <h3>Auction Purchases</h3> 
+      </div>
+      
+        <div class="row text-center">
+          <div class="card-body text-center mt-2">
+            <div class="col-lg-3 col-md-5 col-sm-6 d-flex align-items-center">
+            <h4>Item</h4>
+          </div>
+        </div>
+
+          <div class="col-lg-9 col-md-7 col-sm-6">
+            <div class="card-body mt-2">
+              <div class="row justify-content-around mr-1">
+                <span>Delivery</span>
+                <span>Tax</span>
+                <span>Order</span>
+                <span>Price</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+      ${ require('./product-card-purchases.html') }
+      ${ require('./product-card-purchases.html') }
+      ${ require('./product-card-purchases.html') }
+      ${ require('./product-card-purchases.html') }
+      ${ require('./product-card-purchases.html') }
+
+
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination my-5 justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">&laquo; Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next &raquo;</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
 
       <div
-        class="tab-pane fade"
+        class="tab-pane fade mx-5"
         id="pills-favorites"
         role="tabpanel"
         aria-labelledby="pills-favorites-tab"
@@ -136,12 +187,13 @@
       </div>
 
       <div
-        class="tab-pane fade"
+        class="tab-pane fade mx-5"
         id="pills-alerts"
         role="tabpanel"
         aria-labelledby="pills-alerts-tab"
+        style="height: 100vh;"
       >
-      <div class="container">
+      <div class="container-fluid">
         <div class="row justify-content-between mx-1 my-5">
           <h3>Saved searches</h3>
           <button type="button" class="btn btn-danger">Create Alert</button>
@@ -150,7 +202,7 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="card mb-5">
-                <div class="card-body" style="height: 15rem">
+                <div class="card-body" style="height: 18rem; width: 36rem;">
                   <div class="row justify-content-between">
                     <div>
                       <h4>Type:</h4>
@@ -189,7 +241,7 @@
 
             <div class="col-lg-6">
               <div class="card mb-5">
-                <div class="card-body" style="height: 15rem">
+                <div class="card-body" style="height: 18rem; width: 36rem;">
                   <div class="row justify-content-between">
                     <div>
                       <h4>Type:</h4>
@@ -228,7 +280,7 @@
 
             <div class="col-lg-6">
               <div class="card mb-5">
-                <div class="card-body" style="height: 15rem">
+                <div class="card-body" style="height: 18rem; width: 36rem;">
                   <div class="row justify-content-between">
                     <div>
                       <h4>Type:</h4>
@@ -267,7 +319,7 @@
 
             <div class="col-lg-6">
               <div class="card mb-5">
-                <div class="card-body" style="height: 15rem">
+                <div class="card-body" style="height: 18rem; width: 36rem;">
                   <div class="row justify-content-between">
                     <div>
                       <h4>Type:</h4>
@@ -306,14 +358,16 @@
           </div>
         </div>
       </div>
+
         <div
-          class="tab-pane fade"
+          class="tab-pane fade mx-5"
           id="pills-settings"
           role="tabpanel"
           aria-labelledby="pills-settings-tab"
+          style="height: 100vh;"
         >
           <div class="row">
-            <div class="form-group col-lg-6">
+            <div class="form-group col-lg-6 mt-5">
               <label for="exampleInputEmail1">User Name</label>
               <input
                 class="form-control mb-3"
@@ -338,7 +392,7 @@
                 readonly
               />
 
-              <div class="card" style="height: 15rem">
+              <div class="card my-5" style="height: 15rem">
                 <div class="card-body">
                   <h3>Payment Methods</h3>
                   <h4 class="text-muted font-weight-light">
@@ -353,7 +407,8 @@
               </div>
             </div>
 
-            <div class="form-group col-lg-6">
+
+            <div class="form-group col-lg-6 mt-5">
               <label for="exampleInputEmail1">New Password</label>
               <input
                 class="form-control mb-3"
@@ -377,9 +432,12 @@
                 placeholder="Sellers Permit"
                 readonly
               />
+              <button type="button" class="btn btn-danger">Create Alert</button>
             </div>
+
           </div>
         </div>
+
       </div>
     </div>
   </div>
