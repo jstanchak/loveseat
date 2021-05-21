@@ -191,7 +191,6 @@
         id="pills-alerts"
         role="tabpanel"
         aria-labelledby="pills-alerts-tab"
-        style="height: 100vh;"
       >
       <div class="container-fluid">
         <div class="row justify-content-between mx-1 my-5">
@@ -212,8 +211,13 @@
                       <h4>Styles:</h4>
                       <span class="text-muted">---</span>
                     </div>
-                    <div>
-                      <h4>icons</h4>
+                    <div class="row mr-1">
+                      <div>
+                        <img src="../../assets/images/icons/pencil.svg">
+                      </div>
+                      <div>
+                        <img src="../../assets/images/icons/garbage.svg">
+                      </div>
                     </div>
                   </div>
 
@@ -228,11 +232,13 @@
                   </div>
 
                   <div class="row justify-content-between">
-                    <div>
+                    <div class="row ml-1">
+                      <img src="../../assets/images/icons/gps.svg">
                       <h4>San Diego</h4>
                     </div>
-                    <div>
-                      <span class="text-muted">email off</span>
+                    <div class="row mr-1">
+                      <span class="text-muted mr-1">email off</span>
+                      <img src="../../assets/images/icons/off.svg">
                     </div>
                   </div>
                 </div>
@@ -251,8 +257,13 @@
                       <h4>Styles:</h4>
                       <span class="text-muted">---</span>
                     </div>
-                    <div>
-                      <h4>icons</h4>
+                      <div class="row mr-1">
+                        <div>
+                          <img src="../../assets/images/icons/pencil.svg">
+                        </div>
+                        <div>
+                          <img src="../../assets/images/icons/garbage.svg">
+                        </div>
                     </div>
                   </div>
 
@@ -267,11 +278,13 @@
                   </div>
 
                   <div class="row justify-content-between">
-                    <div>
+                    <div class="row ml-1">
+                      <img src="../../assets/images/icons/gps.svg">
                       <h4>San Diego</h4>
                     </div>
-                    <div>
-                      <span class="text-muted">email off</span>
+                    <div class="row mr-1">
+                      <span class="text-muted mr-1">email off</span>
+                      <img src="../../assets/images/icons/off.svg">
                     </div>
                   </div>
                 </div>
@@ -290,8 +303,13 @@
                       <h4>Styles:</h4>
                       <span class="text-muted">---</span>
                     </div>
-                    <div>
-                      <h4>icons</h4>
+                    <div class="row mr-1">
+                      <div>
+                        <img src="../../assets/images/icons/pencil.svg">
+                      </div>
+                      <div>
+                        <img src="../../assets/images/icons/garbage.svg">
+                      </div>
                     </div>
                   </div>
 
@@ -306,11 +324,13 @@
                   </div>
 
                   <div class="row justify-content-between">
-                    <div>
+                    <div class="row ml-1">
+                      <img src="../../assets/images/icons/gps.svg">
                       <h4>San Diego</h4>
                     </div>
-                    <div>
-                      <span class="text-muted">email off</span>
+                    <div class="row mr-1">
+                      <span class="text-muted mr-1">email off</span>
+                      <img src="../../assets/images/icons/off.svg">
                     </div>
                   </div>
                 </div>
@@ -329,8 +349,13 @@
                       <h4>Styles:</h4>
                       <span class="text-muted">---</span>
                     </div>
-                    <div>
-                      <h4>icons</h4>
+                    <div class="row mr-1">
+                      <div>
+                        <img src="../../assets/images/icons/pencil.svg">
+                      </div>
+                      <div>
+                        <img src="../../assets/images/icons/garbage.svg">
+                      </div>
                     </div>
                   </div>
 
@@ -345,13 +370,16 @@
                   </div>
 
                   <div class="row justify-content-between">
-                    <div>
+                    <div class="row ml-1">
+                      <img src="../../assets/images/icons/gps.svg">
                       <h4>San Diego</h4>
                     </div>
-                    <div>
-                      <span class="text-muted">email off</span>
+                    <div class="row mr-1">
+                      <span class="text-muted mr-1">email off</span>
+                      <img src="../../assets/images/icons/off.svg">
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -359,40 +387,46 @@
         </div>
       </div>
 
-        <div
-          class="tab-pane fade mx-5"
-          id="pills-settings"
-          role="tabpanel"
-          aria-labelledby="pills-settings-tab"
-          style="height: 100vh;"
-        >
-          <div class="row">
-            <div class="form-group col-lg-6 mt-5">
-              <label for="exampleInputEmail1">User Name</label>
-              <input
-                class="form-control mb-3"
-                type="text"
-                placeholder="Santiago"
-                readonly
-              />
+        <div class="tab-pane fade mx-5" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab">
+            
+          <!-- row1 -->
+            <div class="form-row mt-5">
+              <div class="form-group col-lg-6">
+                <label for="inputEmail4">User Name</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Santiago" readonly>
+              </div>
+              <div class="form-group col-lg-6">
+                <label for="inputPassword4">New Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="*******" readonly>
+              </div>
+            </div>
 
-              <label for="exampleInputPassword1">Email Adress</label>
-              <input
-                class="form-control mb-3"
-                type="text"
-                placeholder="example@email.com"
-                readonly
-              />
+            <!-- row2 -->
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label for="inputEmail4">Email Adress</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="example@email.com" readonly>
+              </div>
+              <div class="form-group col-lg-6">
+                <label for="inputPassword4">Confirm Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="*******" readonly>
+              </div>
+            </div>
 
-              <label for="exampleInputPassword1">Phone Number</label>
-              <input
-                class="form-control mb-3"
-                type="text"
-                placeholder="+542984897074"
-                readonly
-              />
+            <!-- row3 -->
+            <div class="form-row mb-5">
+              <div class="form-group col-lg-6">
+                <label for="inputEmail4">Phone Number</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="+542984897074" readonly>
+              </div>
+              <div class="form-group col-lg-6">
+                <label for="inputPassword4">Sellers Permit</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Sellers Permit" readonly>
+              </div>
+            </div>
 
-              <div class="card my-5" style="height: 15rem">
+            <div class="row">
+              <div class="card my-5 col-lg-6">
                 <div class="card-body">
                   <h3>Payment Methods</h3>
                   <h4 class="text-muted font-weight-light">
@@ -400,45 +434,18 @@
                     our system. We will automatically charge your card on file
                     for any winnings after the auction is over.
                   </h4>
-                  <br />
-                  <br />
+                    <br />
+                    <br />
                   <h4 class="text-muted font-weight-light">No cards saved.</h4>
                 </div>
               </div>
             </div>
 
+            <button type="button" class="btn btn-danger">Save Changes</button>
 
-            <div class="form-group col-lg-6 mt-5">
-              <label for="exampleInputEmail1">New Password</label>
-              <input
-                class="form-control mb-3"
-                type="text"
-                placeholder="*******"
-                readonly
-              />
 
-              <label for="exampleInputPassword1">Confirm Password</label>
-              <input
-                class="form-control mb-3"
-                type="text"
-                placeholder="*******"
-                readonly
-              />
-
-              <label for="exampleInputPassword1">Sellers Permit</label>
-              <input
-                class="form-control mb-3"
-                type="text"
-                placeholder="Sellers Permit"
-                readonly
-              />
-              <button type="button" class="btn btn-danger">Create Alert</button>
-            </div>
-
-          </div>
         </div>
-
-      </div>
+      
     </div>
   </div>
 </div>
