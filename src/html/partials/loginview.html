@@ -28,10 +28,9 @@
       placeholder="Password"
     />
     <button
-      type="submit"
+      type="button"
       class="btn btn-primary btn-block mt-5 text-capitalize py-2"
-      data-toggle="modal" 
-      data-target="#Welcome"
+      data-toggle="modal" data-target="#welcome"
     >
     Log in
     </button>
@@ -48,3 +47,8 @@
 
   </div>
 </form>
+
+<div class="modal fade" id="welcome" tabindex="-1" role="dialog" aria-labelledby="welcome" aria-hidden="true">
+  ${ require('./modal-welcome.html') }
+</div>
+

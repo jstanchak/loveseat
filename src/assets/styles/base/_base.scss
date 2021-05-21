@@ -9,3 +9,14 @@ html,
 body {
   height: 100%;
 }
+
+.custom-tabs {
+  a {
+    border-bottom: 3px solid grey;
+    border-radius: 0 !important;
+  }
+  .active {
+    border-bottom: 3px solid red;
+    border-radius: 0 !important;
+  }
+}

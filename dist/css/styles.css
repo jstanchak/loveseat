@@ -9587,6 +9587,14 @@ html,
 body {
   height: 100%; }
 
+.custom-tabs a {
+  border-bottom: 3px solid grey;
+  border-radius: 0 !important; }
+
+.custom-tabs .active {
+  border-bottom: 3px solid red;
+  border-radius: 0 !important; }
+
 .header {
   color: #fafafa;
   background-color: #424242; }
