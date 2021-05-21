@@ -20,3 +20,15 @@ body {
     border-radius: 0 !important;
   }
 }
+
+.custom-page-nav {
+  .active {
+    color: red;
+    background-color: #FFEBE9;
+  }
+}
+
+.modal-title {
+  font-family: Inter, 'Arial Narrow Bold', sans-serif;
+}
+
