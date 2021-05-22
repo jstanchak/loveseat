@@ -9602,6 +9602,14 @@ body {
 .modal-title {
   font-family: Inter, 'Arial Narrow Bold', sans-serif; }
 
+h1, h4, h5 {
+  font-family: 'Inter', sans-serif; }
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 400; }
+
 .header {
   color: #fafafa;
   background-color: #424242; }
