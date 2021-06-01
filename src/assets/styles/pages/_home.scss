@@ -10,7 +10,6 @@
 .all-feature {
     filter: opacity(0.3);
 }
-
 .price-feature {
     position: absolute;
     top: 50%;
@@ -35,7 +34,7 @@ color: #000;
     text-align: center;
     background: #B0F2C2;
     opacity: .6;
-    position: absolute; 
+    position: absolute;
     height: 24px;
     img {
         display: inline-block;
@@ -55,7 +54,7 @@ color: #000;
     text-align: center;
     background: #FFF59F;
     opacity: .6;
-    position: absolute; 
+    position: absolute;
     height: 24px;
     img {
         display: inline-block;
@@ -69,14 +68,14 @@ color: #000;
         font-weight: 600;
         color: #000;
     }
-    
+
 }
 .bid-state-outbid {
     width: 100%;
     text-align: center;
     background: #ED2E44;
     opacity: .6;
-    position: absolute; 
+    position: absolute;
     height: 24px;
     img {
         display: inline-block;
@@ -90,5 +89,5 @@ color: #000;
         font-weight: 600;
         color: #000;
     }
-    
+
 }

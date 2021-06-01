@@ -7881,6 +7881,7 @@ button.bg-dark:focus {
   position: fixed !important; }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -7897,8 +7898,9 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030; }
 
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -9584,6 +9586,29 @@ a.text-dark:hover, a.text-dark:focus {
 html,
 body {
   height: 100%; }
+
+.custom-tabs a {
+  border-bottom: 3px solid grey;
+  border-radius: 0 !important; }
+
+.custom-tabs .active {
+  border-bottom: 3px solid red;
+  border-radius: 0 !important; }
+
+.custom-page-nav .active {
+  color: red;
+  background-color: #FFEBE9; }
+
+.modal-title {
+  font-family: Inter, 'Arial Narrow Bold', sans-serif; }
+
+h1, h4, h5 {
+  font-family: 'Inter', sans-serif; }
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 400; }
 
 .header {
   color: #fafafa;
