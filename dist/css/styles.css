@@ -9597,18 +9597,46 @@ body {
 
 .custom-page-nav .active {
   color: red;
-  background-color: #FFEBE9; }
+  background-color: #ffebe9; }
 
 .modal-title {
-  font-family: Inter, 'Arial Narrow Bold', sans-serif; }
+  font-family: Inter, "Arial Narrow Bold", sans-serif; }
 
-h1, h4, h5 {
-  font-family: 'Inter', sans-serif; }
+h1,
+h4,
+h5 {
+  font-family: "Inter", sans-serif; }
 
 h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 400; }
+
+.custom-overlay-position2 {
+  position: absolute;
+  margin: 1.125rem;
+  left: 0;
+  top: 15px;
+  width: 88%;
+  bottom: -75%; }
+
+.title {
+  font-size: 48px; }
+  @media (max-width: 768px) {
+    .title {
+      font-size: 40px; } }
+  @media (max-width: 400px) {
+    .title {
+      font-size: 32px; } }
+
+.title1 {
+  font-size: 24px; }
+  @media (max-width: 768px) {
+    .title1 {
+      font-size: 20px; } }
+  @media (max-width: 400px) {
+    .title1 {
+      font-size: 18px; } }
 
 .header {
   color: #fafafa;
