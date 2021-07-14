@@ -75,6 +75,8 @@ h3 {
 
 .image-hero{
   height: 70vh;
+  background-image: url('../../images/cat.jpg'); 
+  background-size: cover;
 
   @media (max-width: 1024px) {
     // height: 40vh;
@@ -92,6 +94,8 @@ h3 {
 }
 
 .image-hero2{
+  background-image: url('../../images/cabinets.jpg'); 
+  background-size: cover;
   height: 70vh;
 
   @media (max-width: 1024px) {
@@ -119,6 +123,11 @@ h3 {
 .main {
   background-color: #ffffff;
   width: 90vw;
+}
+
+.factory{
+  background-image: url('../../images/factory.jpg'); 
+  height: 50vh;
 }
 
 // maps
