@@ -9638,6 +9638,40 @@ h3 {
     .title1 {
       font-size: 18px; } }
 
+.image-hero {
+  height: 70vh; }
+  @media (max-width: 1024px) {
+    .image-hero {
+      height: 50vh; } }
+  @media (max-width: 500px) {
+    .image-hero {
+      height: 60vh; } }
+  @media (max-width: 350px) {
+    .image-hero {
+      height: 75vh; } }
+
+.image-hero2 {
+  height: 70vh; }
+  @media (max-width: 1024px) {
+    .image-hero2 {
+      height: 50vh; } }
+  @media (max-width: 600px) {
+    .image-hero2 {
+      height: 70vh; } }
+  @media (max-width: 500px) {
+    .image-hero2 {
+      height: 70vh; } }
+  @media (max-width: 400px) {
+    .image-hero2 {
+      height: 65vh; } }
+  @media (max-width: 350px) {
+    .image-hero2 {
+      height: 80vh; } }
+
+.main {
+  background-color: #ffffff;
+  width: 90vw; }
+
 .map-container-2 {
   overflow: hidden;
   padding-bottom: 56.25%;

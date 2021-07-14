@@ -73,6 +73,54 @@ h3 {
   }
 }
 
+.image-hero{
+  height: 70vh;
+
+  @media (max-width: 1024px) {
+    // height: 40vh;
+    height: 50vh;
+  }
+
+  @media (max-width: 500px) {
+    height: 60vh;
+  }
+
+  @media (max-width: 350px) {
+    height: 75vh;
+  }
+
+}
+
+.image-hero2{
+  height: 70vh;
+
+  @media (max-width: 1024px) {
+    // height: 40vh;
+    height: 50vh;
+  }
+
+  @media (max-width: 600px) {
+    height: 70vh;
+  }
+
+  @media (max-width: 500px) {
+    height: 70vh;
+  }
+
+  @media (max-width: 400px) {
+    height: 65vh;
+  }
+
+  @media (max-width: 350px) {
+    height: 80vh;
+  }
+}
+
+.main {
+  background-color: #ffffff;
+  width: 90vw;
+}
+
 // maps
 
 .map-container-2{
