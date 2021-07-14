@@ -9638,6 +9638,19 @@ h3 {
     .title1 {
       font-size: 18px; } }
 
+.map-container-2 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+
+.map-container-2 iframe {
+  left: 0;
+  top: 0;
+  height: 90%;
+  width: 100%;
+  position: absolute; }
+
 .header {
   color: #fafafa;
   background-color: #424242; }
